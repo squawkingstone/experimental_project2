@@ -219,8 +219,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 4
   height: 4
-  room_size: 12
+  room_size: 10
+  margin: 2
   room_prefab: {fileID: 1023974804144260, guid: 0cd5288d5a458094baa9de6e7b1703f1,
+    type: 2}
+  hall_prefab: {fileID: 1989148318505290, guid: 34f7e5d9e6cadab42a76c013e2798cc4,
     type: 2}
 --- !u!4 &1363270473
 Transform:
