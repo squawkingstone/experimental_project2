@@ -7,6 +7,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private string forwardAxis;
     [SerializeField] private string sidewaysAxis;
     [SerializeField] private string jumpAxis;
+    [SerializeField] private string actionAxis;
     [SerializeField] private float movementSpeed;
     [SerializeField] private float groundAccel;
     [SerializeField] private float airAccel;
@@ -25,6 +26,8 @@ public class PlayerControl : MonoBehaviour
     private bool jump = false;
     PlayerTrackerCam cam;
 
+    public bool actionDown{get; private set;}
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -42,6 +45,7 @@ public class PlayerControl : MonoBehaviour
         movementAxisVector += new Vector3 (Input.GetAxisRaw(sidewaysAxis), 0, Input.GetAxisRaw(forwardAxis));
         jump |= Input.GetButtonDown(jumpAxis);
         cameraForwardRotation = cam.GetForwardRotator();
+        actionDown = Input.GetButtonDown(actionAxis);
         ++frameCounter;
     }
 
