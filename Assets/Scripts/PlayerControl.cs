@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    [Header("Input")]
     [SerializeField] private string forwardAxis;
     [SerializeField] private string sidewaysAxis;
     [SerializeField] private string jumpAxis;
+    [SerializeField] private string actionAxis;
+    [SerializeField] private string attackAxis;
+    
+    [Header("Movement Parameters")]
     [SerializeField] private float movementSpeed;
     [SerializeField] private float groundAccel;
     [SerializeField] private float airAccel;
+    [SerializeField] private float velocityTarget;
     [SerializeField] private float angularSpeed;
-    [SerializeField] private float maxWalkAngle;
+    [SerializeField] private float angularAccel;
     [SerializeField] private float angularTarget;
+    [SerializeField][Range(0, 90)] private float maxWalkAngle;
     [SerializeField] private float jumpHeight;
 
     private Rigidbody rb;
@@ -24,6 +31,9 @@ public class PlayerControl : MonoBehaviour
     private float jumpForce;
     private bool jump = false;
     PlayerTrackerCam cam;
+
+    public bool actionDown{get; private set;}
+    public bool attackDown{get; private set;}
 
     void Awake()
     {
@@ -42,6 +52,8 @@ public class PlayerControl : MonoBehaviour
         movementAxisVector += new Vector3 (Input.GetAxisRaw(sidewaysAxis), 0, Input.GetAxisRaw(forwardAxis));
         jump |= Input.GetButtonDown(jumpAxis);
         cameraForwardRotation = cam.GetForwardRotator();
+        actionDown = Input.GetButtonDown(actionAxis);
+        attackDown = Input.GetButtonDown(attackAxis);
         ++frameCounter;
     }
 
@@ -91,6 +103,31 @@ public class PlayerControl : MonoBehaviour
             rb.AddForce(velDiff * accel * rb.mass);
         }
         
+        if(vel.sqrMagnitude > velocityTarget * velocityTarget)
+        {
+            vel = vel.normalized;
+
+            float angleToTurn = Mathf.Deg2Rad * Vector3.SignedAngle(transform.forward, vel, Vector3.up);
+            angleToTurn = Mathf.Clamp(angleToTurn, -angularAccel, angularAccel);
+            if(Mathf.Abs(angleToTurn) < angularTarget)
+            {
+                transform.rotation = Quaternion.LookRotation(vel, Vector3.up);
+                rb.angularVelocity = Vector3.zero;
+            }
+            else
+            {
+                rb.AddTorque(Vector3.up * angleToTurn);
+                if(rb.angularVelocity.magnitude > angularSpeed)
+                {
+                    rb.angularVelocity = rb.angularVelocity.normalized * angularSpeed;
+                }
+            }
+        }
+        else
+        {
+            rb.angularVelocity = Vector3.zero;
+        }
+
         frameCounter = 0;
         jump = false;
         movementAxisVector = Vector3.zero;
