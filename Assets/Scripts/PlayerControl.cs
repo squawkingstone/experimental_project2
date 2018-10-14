@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    [Header("Input")]
     [SerializeField] private string forwardAxis;
     [SerializeField] private string sidewaysAxis;
     [SerializeField] private string jumpAxis;
     [SerializeField] private string actionAxis;
+    
+    [Header("Movement Parameters")]
     [SerializeField] private float movementSpeed;
     [SerializeField] private float groundAccel;
     [SerializeField] private float airAccel;
     [SerializeField] private float angularSpeed;
-    [SerializeField] private float maxWalkAngle;
+    [SerializeField][Range(0, 90)] private float maxWalkAngle;
     [SerializeField] private float angularTarget;
     [SerializeField] private float jumpHeight;
 
