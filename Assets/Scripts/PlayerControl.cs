@@ -16,7 +16,6 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float airAccel;
     [SerializeField] private float angularSpeed;
     [SerializeField][Range(0, 90)] private float maxWalkAngle;
-    [SerializeField] private float angularTarget;
     [SerializeField] private float jumpHeight;
 
     private Rigidbody rb;
