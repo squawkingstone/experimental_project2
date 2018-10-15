@@ -31,6 +31,7 @@ public class PlayerControl : MonoBehaviour
     private float jumpForce;
     private bool jump = false;
     PlayerTrackerCam cam;
+    private bool lastAttackPressed;
 
     public bool actionDown{get; private set;}
     public bool attackDown{get; private set;}
@@ -53,7 +54,9 @@ public class PlayerControl : MonoBehaviour
         jump |= Input.GetButtonDown(jumpAxis);
         cameraForwardRotation = cam.GetForwardRotator();
         actionDown = Input.GetButtonDown(actionAxis);
-        attackDown = Input.GetButtonDown(attackAxis);
+        bool attack = Input.GetAxisRaw(attackAxis) > 0.5f;
+        attackDown = attack && !lastAttackPressed;
+        lastAttackPressed = attack;
         ++frameCounter;
     }
 
