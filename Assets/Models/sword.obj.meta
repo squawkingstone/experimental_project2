@@ -1,17 +1,34 @@
 fileFormatVersion: 2
-guid: 4f975db34860e6e48aca22a06d111b79
+guid: ff11307abbceda54d840506e8712faf6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Tube1_cut2_default
-    400000: //RootNode
-    400002: Tube1_cut2_default
-    2100000: default
-    2100002: Tube1_cut2_defaultMat
-    2300000: Tube1_cut2_default
-    3300000: Tube1_cut2_default
-    4300000: Tube1_cut2_default
+    100000: pCube1
+    100002: pCube2
+    100004: pCube3
+    100006: pCylinder1
+    100008: //RootNode
+    400000: pCube1
+    400002: pCube2
+    400004: pCube3
+    400006: pCylinder1
+    400008: //RootNode
+    2100000: pCube1Mat
+    2100002: pCube2Mat
+    2100004: pCube3Mat
+    2100006: pCylinder1Mat
+    2300000: pCube1
+    2300002: pCube2
+    2300004: pCube3
+    2300006: pCylinder1
+    3300000: pCube1
+    3300002: pCube2
+    3300004: pCube3
+    3300006: pCylinder1
+    4300000: pCube1
+    4300002: pCube2
+    4300004: pCube3
+    4300006: pCylinder1
   externalObjects: {}
   materials:
     importMaterials: 1
