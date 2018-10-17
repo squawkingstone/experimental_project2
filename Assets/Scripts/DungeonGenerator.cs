@@ -140,7 +140,6 @@ public class DungeonGenerator : MonoBehaviour
 						? graph[v][1]
 						: graph[v][0]
 					);
-				Debug.Log(w-v);
 				q = Quaternion.AngleAxis(Vector2.SignedAngle(w-v, Vector2.up), Vector3.up);
 				break;
 			default:
