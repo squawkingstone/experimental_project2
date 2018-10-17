@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114951453678079952}
   - component: {fileID: 114755820665054376}
   - component: {fileID: 54039506721930228}
+  - component: {fileID: 114199620542314566}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -97,11 +98,24 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &114199620542314566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743653301601982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4dcc02164576344a8e9bc7832727d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageCooldown: 0.25
+  damage: 10
 --- !u!114 &114755820665054376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAccel: 12
-  maxSpeed: 4
+  maxSpeed: 6
   slowRadius: 2
   accelTime: 0.1
   seekRadius: 5
@@ -130,13 +144,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  text: {fileID: 0}
 --- !u!136 &136261748014586124
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743653301601982}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f8eed287b3cb3234eb6bb8fc4c4c1065, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5

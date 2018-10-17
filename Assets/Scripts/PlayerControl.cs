@@ -149,4 +149,13 @@ public class PlayerControl : MonoBehaviour
             }
         }
     }
+
+    void OnDestroy()
+    {
+        GameObject[] go = FindObjectsOfType<GameObject>();
+        foreach(GameObject g in go)
+        {
+            g.SendMessage("DropTarget", SendMessageOptions.DontRequireReceiver);
+        }
+    }
 }
