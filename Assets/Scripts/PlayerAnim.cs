@@ -9,7 +9,6 @@ public class PlayerAnim : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		Debug.Log(rb.velocity.magnitude);
 		if (rb.velocity.magnitude > 0.01f && !anim.GetBool("IsRunning"))
 		{
 			anim.SetBool("IsRunning", true);
