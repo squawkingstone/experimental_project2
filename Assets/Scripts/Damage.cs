@@ -28,7 +28,15 @@ public class Damage : MonoBehaviour
         }
         if(health <= 0)
         {
-            Destroy(gameObject);
+            DieAndFallover daf = GetComponent<DieAndFallover>();
+            if(daf != null)
+            {
+                daf.Die();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
             return true;
         }
 
