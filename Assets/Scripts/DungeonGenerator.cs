@@ -10,6 +10,16 @@ using AdjacencyList = System.Collections.Generic.Dictionary<UnityEngine.Vector2I
  *  - 'Treasure' placement
  */
 
+[System.Serializable]
+public class RoomPrefabs
+{
+	public GameObject OneDoor; // oriented +z
+	public GameObject TwoDoorStraight; // oriented +-z
+	public GameObject TwoDoorL; // oriented +x and +z
+	public GameObject ThreeDoor; // oriented +-x and +z
+	public GameObject FourDoor;
+}
+
 public class DungeonGenerator : MonoBehaviour 
 {
 	private class Edge
@@ -35,10 +45,11 @@ public class DungeonGenerator : MonoBehaviour
 	[SerializeField] float room_size;
 	[SerializeField] float margin;
 
-	[SerializeField] GameObject start_prefab;
-	[SerializeField] GameObject end_prefab;
-	[SerializeField] GameObject room_prefab;
-	[SerializeField] GameObject hall_prefab;
+	[SerializeField] RoomPrefabs room_prefabs;
+	[SerializeField] GameObject  hall_prefab;
+
+	[SerializeField] GameObject player;
+	[SerializeField] GameObject level_transition;
 
 	void Start() { GenerateDungeon(); }
 
@@ -88,17 +99,67 @@ public class DungeonGenerator : MonoBehaviour
 		{
 			for (int j = 0; j < height; j++)
 			{
-				if (s.x == i && s.y == j) { InstantiateRoom(start_prefab, i, j, room_size, margin); }
-				else if (t.x == i && t.y == j) { InstantiateRoom(end_prefab, i, j, room_size, margin); }
-				else { InstantiateRoom(room_prefab, i, j, room_size, margin); }
+				if (s.x == i && s.y == j) { InstantiateRoom(i, j, true, false, room_prefabs, graph); }
+				else if (t.x == i && t.y == j) { InstantiateRoom(i, j, false, true, room_prefabs, graph); }
+				else { InstantiateRoom(i, j, false, false, room_prefabs, graph); }
 			}
 		}
 	}
 
-	void InstantiateRoom(GameObject prefab, int x, int y, float size, float margin)
+	void InstantiateRoom(int x, int y, bool start, bool end, RoomPrefabs prefabs, AdjacencyList graph)
 	{
-		Instantiate(prefab, (Vector3.right * x * (size + margin)) +
-			(Vector3.forward * y * (size + margin)), Quaternion.identity);
+		GameObject prefab = null; Quaternion q = Quaternion.identity;
+		Vector2Int v = new Vector2Int(x, y);
+
+		switch (graph[v].Count)
+		{
+			case 1:
+				prefab = prefabs.OneDoor;
+				q = Quaternion.AngleAxis(Vector2.SignedAngle(graph[v][0]-v, Vector2.up), Vector3.up);
+				break;
+			case 2:
+				if (Mathf.Approximately(Vector2.Dot(graph[v][0]-v, graph[v][1]-v), 0))
+				{
+					prefab = prefabs.TwoDoorL;
+					Vector2Int u = (Vector2.SignedAngle(graph[v][0]-v, graph[v][1]-v) < 0f)
+						? graph[v][0]
+						: graph[v][1];
+					q = Quaternion.AngleAxis(Vector2.SignedAngle(u-v, Vector2.up), Vector3.up);
+				}
+				else
+				{
+					prefab = prefabs.TwoDoorStraight;
+					q = Quaternion.AngleAxis(Vector2.Angle(graph[v][0]-v, Vector2.up), Vector3.up);
+				}
+				break;
+			case 3:
+				prefab = prefabs.ThreeDoor;
+				Vector2Int w = (Mathf.Approximately(Vector2.Dot(graph[v][0]-v, graph[v][1]-v), -1f))
+					? graph[v][2]
+					: (Mathf.Approximately(Vector2.Dot(graph[v][0]-v, graph[v][2]-v), -1f) 
+						? graph[v][1]
+						: graph[v][0]
+					);
+				Debug.Log(w-v);
+				q = Quaternion.AngleAxis(Vector2.SignedAngle(w-v, Vector2.up), Vector3.up);
+				break;
+			default:
+				prefab = prefabs.FourDoor;
+				break;
+		}
+
+		GameObject room = Instantiate(prefab, (Vector3.right * x * (room_size + margin)) +
+			(Vector3.forward * y * (room_size + margin)), q);
+		if (start)
+		{
+			player.transform.position = room.transform.position + Vector3.up;
+			Destroy(room.transform.Find("Enemy").gameObject);
+			Destroy(room.transform.Find("Enemy (1)").gameObject);
+		}
+		if (end)
+		{
+			level_transition.transform.position = room.transform.position;
+		}
 	}
 
 	[ContextMenu("Place Hallway")]
@@ -133,7 +194,8 @@ public class DungeonGenerator : MonoBehaviour
 
 		foreach (Edge e in connections)
 		{
-			Instantiate(hall_prefab, e.GetEdgePos(room_size, margin), Quaternion.identity);
+			Instantiate(hall_prefab, e.GetEdgePos(room_size, margin), 
+				(e.v.x == e.u.x) ? Quaternion.identity : Quaternion.AngleAxis(90, Vector3.up));
 		}
 
 		// turn connections into an adjacency list,
