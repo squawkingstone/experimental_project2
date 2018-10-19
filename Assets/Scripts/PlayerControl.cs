@@ -23,6 +23,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float jumpHeight;
 
     private Rigidbody rb;
+    private bool canMove;
     private Vector3 groundedNormal;
     private float cosWalkAngle;
     private Vector3 movementAxisVector;
@@ -46,6 +47,7 @@ public class PlayerControl : MonoBehaviour
         movementAxisVector = Vector3.zero;
         cameraForwardRotation = Quaternion.identity;
         cam = FindObjectOfType<PlayerTrackerCam>();
+        canMove = true;
     }
 
     void Update()
@@ -89,6 +91,11 @@ public class PlayerControl : MonoBehaviour
         {
             movement = (movement - Vector3.Dot(movementNormal, movement) * movementNormal).normalized;
             movement *= moveLength * movementSpeed;
+        }
+        
+        if(!canMove)
+        {
+            movement = Vector3.zero;
         }
 
         float accel = grounded ? groundAccel : airAccel;
@@ -157,5 +164,10 @@ public class PlayerControl : MonoBehaviour
         {
             g.SendMessage("DropTarget", SendMessageOptions.DontRequireReceiver);
         }
+    }
+
+    public void setCanMove(bool value)
+    {
+        canMove = value;
     }
 }
