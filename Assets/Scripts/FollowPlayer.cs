@@ -26,8 +26,15 @@ public class FollowPlayer : MonoBehaviour
 
     void Move(float coverDistance)
     {
-        
-        transform.position =  Vector3.Lerp(transform.position, trackedObject.position + Vector3.up * heightOffset, responsiveness);
-        transform.rotation *= Quaternion.Euler(0, inversion * Mathf.Rad2Deg * sensitivityX * Input.GetAxisRaw(panAxis) * Time.deltaTime, 0);
+        if(trackedObject != null)
+        {
+            transform.position =  Vector3.Lerp(transform.position, trackedObject.position + Vector3.up * heightOffset, responsiveness);
+            transform.rotation *= Quaternion.Euler(0, inversion * Mathf.Rad2Deg * sensitivityX * Input.GetAxisRaw(panAxis) * Time.deltaTime, 0);
+        }
+    }
+
+    void DropTarget()
+    {
+        trackedObject = null;
     }
 }

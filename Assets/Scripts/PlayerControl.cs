@@ -23,6 +23,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float jumpHeight;
 
     private Rigidbody rb;
+    private bool canMove;
     private Vector3 groundedNormal;
     private float cosWalkAngle;
     private Vector3 movementAxisVector;
@@ -31,6 +32,7 @@ public class PlayerControl : MonoBehaviour
     private float jumpForce;
     private bool jump = false;
     PlayerTrackerCam cam;
+    private bool lastAttackPressed;
 
     public bool actionDown{get; private set;}
     public bool attackDown{get; private set;}
@@ -45,6 +47,7 @@ public class PlayerControl : MonoBehaviour
         movementAxisVector = Vector3.zero;
         cameraForwardRotation = Quaternion.identity;
         cam = FindObjectOfType<PlayerTrackerCam>();
+        canMove = true;
     }
 
     void Update()
@@ -53,7 +56,9 @@ public class PlayerControl : MonoBehaviour
         jump |= Input.GetButtonDown(jumpAxis);
         cameraForwardRotation = cam.GetForwardRotator();
         actionDown = Input.GetButtonDown(actionAxis);
-        attackDown = Input.GetButtonDown(attackAxis);
+        bool attack = Input.GetAxisRaw(attackAxis) > 0.5f;
+        attackDown = attack && !lastAttackPressed;
+        lastAttackPressed = attack;
         ++frameCounter;
     }
 
@@ -86,6 +91,11 @@ public class PlayerControl : MonoBehaviour
         {
             movement = (movement - Vector3.Dot(movementNormal, movement) * movementNormal).normalized;
             movement *= moveLength * movementSpeed;
+        }
+        
+        if(!canMove)
+        {
+            movement = Vector3.zero;
         }
 
         float accel = grounded ? groundAccel : airAccel;
@@ -145,5 +155,19 @@ public class PlayerControl : MonoBehaviour
                 groundedNormal += contact.normal;
             }
         }
+    }
+
+    void OnDestroy()
+    {
+        GameObject[] go = FindObjectsOfType<GameObject>();
+        foreach(GameObject g in go)
+        {
+            g.SendMessage("DropTarget", SendMessageOptions.DontRequireReceiver);
+        }
+    }
+
+    public void setCanMove(bool value)
+    {
+        canMove = value;
     }
 }
