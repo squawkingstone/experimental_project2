@@ -16,6 +16,7 @@ public class DoContanctDamage : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+        if(!enabled) return;
         Damage d = col.gameObject.GetComponent<Damage>();
         if(d != null)
         {
@@ -25,6 +26,7 @@ public class DoContanctDamage : MonoBehaviour
 
     void OnCollisionStay(Collision col)
     {
+        if(!enabled) return;
         Damage d = col.gameObject.GetComponent<Damage>();
         if(d != null && damageTimers.ContainsKey(d))
         {
@@ -40,6 +42,7 @@ public class DoContanctDamage : MonoBehaviour
 
     void OnCollisionExit(Collision col)
     {
+        if(!enabled) return;
         Damage d = col.gameObject.GetComponent<Damage>();
         if(d != null && damageTimers.ContainsKey(d))
         {
