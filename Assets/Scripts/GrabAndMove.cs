@@ -8,6 +8,7 @@ public class GrabAndMove : MonoBehaviour
     [SerializeField] private float swingTime;
     [SerializeField] private float placeTime;
     [SerializeField] private float returnTime;
+    [SerializeField] private float grabHeightOffset;
     [SerializeField] private AnimationCurve heightCurve;
     [SerializeField] private Vector3[] targets;
 
@@ -35,7 +36,7 @@ public class GrabAndMove : MonoBehaviour
         case 1:
             break;
         case 2:
-            transform.position = Vector3.Lerp(initialPos, target.transform.position, (Time.time - triggerTime)/swingTime);
+            transform.position = Vector3.Lerp(initialPos, target.transform.position + Vector3.up * grabHeightOffset, (Time.time - triggerTime)/swingTime);
             transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/swingTime);
             if(Time.time - triggerTime >= swingTime)
             {
@@ -65,7 +66,7 @@ public class GrabAndMove : MonoBehaviour
             triggerTime = Time.time;
             break;
         case 6:
-            transform.position = Vector3.Lerp(grabPos, targetPos, (Time.time - triggerTime)/returnTime);
+            transform.position = Vector3.Lerp(targetPos, initialPos, (Time.time - triggerTime)/returnTime);
             transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/returnTime);
             if(Time.time - triggerTime >= returnTime)
             {
