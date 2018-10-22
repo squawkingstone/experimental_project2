@@ -33,7 +33,6 @@ public class DoContanctDamage : MonoBehaviour
             damageTimers[d] -= Time.fixedDeltaTime;
             if(damageTimers[d] <= 0)
             {
-                
                 damageTimers[d] = damageCooldown;
                 d.TakeDamage(damage);
             }
