@@ -169,5 +169,10 @@ public class PlayerControl : MonoBehaviour
     public void setCanMove(bool value)
     {
         canMove = value;
+        rb.useGravity = value;
+        if(!value)
+        {
+            rb.velocity = Vector3.zero;
+        }
     }
 }
