@@ -11,6 +11,10 @@ public class GrabAndMove : MonoBehaviour
     [SerializeField] private float grabHeightOffset;
     [SerializeField] private AnimationCurve heightCurve;
     [SerializeField] private Vector3[] targets;
+    [SerializeField] private Vector3 talkPos;
+    [SerializeField] private Vector3 endPos;
+    [SerializeField] private int maxCycles;
+    /*DEBUG*/[SerializeField] private bool triggerEndTalk;
 
     private Vector3 initialPos;
     private Vector3 grabPos;
@@ -18,15 +22,25 @@ public class GrabAndMove : MonoBehaviour
     private int state;
     private float triggerTime;
     private PlayerControl target;
-
+    private int cycles;
     void Awake()
     {
         state = -1;
         initialPos = transform.position;
+        cycles = maxCycles;
+        triggerEndTalk = false;
     }
 
     void Update()
     {
+        #region DebugTesting
+        if(triggerEndTalk)
+        {
+            FinishTalking();
+        }
+        triggerEndTalk = false;
+        #endregion
+
         switch (state)
         {
         case 0:
@@ -46,7 +60,15 @@ public class GrabAndMove : MonoBehaviour
             }
             break;
         case 3:
-            state = 4;
+            if(cycles == 0)
+            {
+                state = 7;
+            }
+            else
+            {
+                state = 4;
+                --cycles;
+            }
             triggerTime = Time.time;
             grabPos = transform.position;
             SelectTarget();
@@ -73,6 +95,36 @@ public class GrabAndMove : MonoBehaviour
                 state = 0;
             }
             break;
+        case 7:
+            transform.position = Vector3.Lerp(grabPos, talkPos, (Time.time - triggerTime)/placeTime);
+            transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/placeTime);
+            if(Time.time - triggerTime >= placeTime)
+            {
+                state = 8;
+            }
+            break;
+        case 8:
+            break;
+        case 9:
+            transform.position = Vector3.Lerp(talkPos, endPos, (Time.time - triggerTime)/placeTime);
+            transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/placeTime);
+            if(Time.time - triggerTime >= placeTime)
+            {
+                state = 10;
+                triggerTime = Time.time;
+                target.setCanMove(true);
+                target.transform.parent = null;
+            }
+            break;
+        case 10:
+            transform.position = Vector3.Lerp(endPos, initialPos, (Time.time - triggerTime)/returnTime);
+            transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/returnTime);
+            if(Time.time - triggerTime >= returnTime)
+            {
+                state = -1;
+                cycles = maxCycles;
+            }
+            break;
         default:
             break;
         }
@@ -83,6 +135,16 @@ public class GrabAndMove : MonoBehaviour
         target = player;
         state = 0;
     }
+
+    public void FinishTalking()
+    {
+        if(state == 8)
+        {
+            state = 9;
+            triggerTime = Time.time;
+        }
+    }
+    
     IEnumerator WaitPatiently()
     {
         yield return new WaitForSeconds(patience);
@@ -90,7 +152,7 @@ public class GrabAndMove : MonoBehaviour
         state = 2;
     }
 
-    private void SelectTarget()
+    void SelectTarget()
     {
         float minDist = (targets[0] - transform.position).sqrMagnitude;
         targetPos = targets[0];
