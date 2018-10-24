@@ -13,11 +13,11 @@ using AdjacencyList = System.Collections.Generic.Dictionary<UnityEngine.Vector2I
 [System.Serializable]
 public class RoomPrefabs
 {
-	public GameObject OneDoor; // oriented +z
-	public GameObject TwoDoorStraight; // oriented +-z
-	public GameObject TwoDoorL; // oriented +x and +z
-	public GameObject ThreeDoor; // oriented +-x and +z
-	public GameObject FourDoor;
+	public GameObject[] OneDoor; // oriented +z
+	public GameObject[] TwoDoorStraight; // oriented +-z
+	public GameObject[] TwoDoorL; // oriented +x and +z
+	public GameObject[] ThreeDoor; // oriented +-x and +z
+	public GameObject[] FourDoor;
 }
 
 public class DungeonGenerator : MonoBehaviour 
@@ -114,13 +114,13 @@ public class DungeonGenerator : MonoBehaviour
 		switch (graph[v].Count)
 		{
 			case 1:
-				prefab = prefabs.OneDoor;
+				prefab = prefabs.OneDoor[Random.Range(0, prefabs.OneDoor.Length)];
 				q = Quaternion.AngleAxis(Vector2.SignedAngle(graph[v][0]-v, Vector2.up), Vector3.up);
 				break;
 			case 2:
 				if (Mathf.Approximately(Vector2.Dot(graph[v][0]-v, graph[v][1]-v), 0))
 				{
-					prefab = prefabs.TwoDoorL;
+					prefab = prefabs.TwoDoorL[Random.Range(0, prefabs.TwoDoorL.Length)];
 					Vector2Int u = (Vector2.SignedAngle(graph[v][0]-v, graph[v][1]-v) < 0f)
 						? graph[v][0]
 						: graph[v][1];
@@ -128,12 +128,12 @@ public class DungeonGenerator : MonoBehaviour
 				}
 				else
 				{
-					prefab = prefabs.TwoDoorStraight;
+					prefab = prefabs.TwoDoorStraight[Random.Range(0, prefabs.TwoDoorStraight.Length)];
 					q = Quaternion.AngleAxis(Vector2.Angle(graph[v][0]-v, Vector2.up), Vector3.up);
 				}
 				break;
 			case 3:
-				prefab = prefabs.ThreeDoor;
+				prefab = prefabs.ThreeDoor[Random.Range(0, prefabs.ThreeDoor.Length)];
 				Vector2Int w = (Mathf.Approximately(Vector2.Dot(graph[v][0]-v, graph[v][1]-v), -1f))
 					? graph[v][2]
 					: (Mathf.Approximately(Vector2.Dot(graph[v][0]-v, graph[v][2]-v), -1f) 
@@ -143,17 +143,25 @@ public class DungeonGenerator : MonoBehaviour
 				q = Quaternion.AngleAxis(Vector2.SignedAngle(w-v, Vector2.up), Vector3.up);
 				break;
 			default:
-				prefab = prefabs.FourDoor;
+				prefab = prefabs.FourDoor[Random.Range(0, prefabs.FourDoor.Length)];
 				break;
+		}
+		
+		if (start)
+		{
+			prefab = prefabs.OneDoor[0];
+		}
+		if (end)
+		{
+			prefab = prefabs.OneDoor[0];
 		}
 
 		GameObject room = Instantiate(prefab, (Vector3.right * x * (room_size + margin)) +
 			(Vector3.forward * y * (room_size + margin)), q);
+
 		if (start)
 		{
 			player.transform.position = room.transform.position + Vector3.up;
-			Destroy(room.transform.Find("Enemy").gameObject);
-			Destroy(room.transform.Find("Enemy (1)").gameObject);
 		}
 		if (end)
 		{
