@@ -9,6 +9,8 @@ public class GrabAndMove : MonoBehaviour
     [SerializeField] private float placeTime;
     [SerializeField] private float returnTime;
     [SerializeField] private float grabHeightOffset;
+    [SerializeField][Range(0, 1)] private float linearSnappiness;
+    [SerializeField][Range(0, 1)] private float angularSnappiness;
     [SerializeField] private AnimationCurve heightCurve;
     [SerializeField] private Vector3[] targets;
     [SerializeField] private Vector3 talkPos;
@@ -23,12 +25,15 @@ public class GrabAndMove : MonoBehaviour
     private float triggerTime;
     private PlayerControl target;
     private int cycles;
+    bool movingPlayer;
+
     void Awake()
     {
         state = -1;
         initialPos = transform.position;
         cycles = maxCycles;
         triggerEndTalk = false;
+        movingPlayer = false;
     }
 
     void Update()
@@ -56,7 +61,7 @@ public class GrabAndMove : MonoBehaviour
             {
                 state = 3;
                 target.setCanMove(false);
-                target.transform.parent = transform;
+                movingPlayer = true;
             }
             break;
         case 3:
@@ -80,7 +85,7 @@ public class GrabAndMove : MonoBehaviour
             {
                 state = 5;
                 target.setCanMove(true);
-                target.transform.parent = null;
+                movingPlayer = false;
             }
             break;
         case 5:
@@ -113,7 +118,7 @@ public class GrabAndMove : MonoBehaviour
                 state = 10;
                 triggerTime = Time.time;
                 target.setCanMove(true);
-                target.transform.parent = null;
+                movingPlayer = false;
             }
             break;
         case 10:
@@ -127,6 +132,15 @@ public class GrabAndMove : MonoBehaviour
             break;
         default:
             break;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if(movingPlayer)
+        {
+            target.transform.position = Vector3.Lerp(target.transform.position, transform.position - Vector3.up * grabHeightOffset, linearSnappiness);
+            target.transform.rotation = Quaternion.Slerp(target.transform.rotation, transform.rotation, angularSnappiness);
         }
     }
 
