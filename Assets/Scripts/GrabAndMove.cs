@@ -9,8 +9,14 @@ public class GrabAndMove : MonoBehaviour
     [SerializeField] private float placeTime;
     [SerializeField] private float returnTime;
     [SerializeField] private float grabHeightOffset;
+    [SerializeField][Range(0, 1)] private float linearSnappiness;
+    [SerializeField][Range(0, 1)] private float angularSnappiness;
     [SerializeField] private AnimationCurve heightCurve;
     [SerializeField] private Vector3[] targets;
+    [SerializeField] private Vector3 talkPos;
+    [SerializeField] private Vector3 endPos;
+    [SerializeField] private int maxCycles;
+    /*DEBUG*/[SerializeField] private bool triggerEndTalk;
 
     private Vector3 initialPos;
     private Vector3 grabPos;
@@ -18,15 +24,28 @@ public class GrabAndMove : MonoBehaviour
     private int state;
     private float triggerTime;
     private PlayerControl target;
+    private int cycles;
+    bool movingPlayer;
 
     void Awake()
     {
         state = -1;
         initialPos = transform.position;
+        cycles = maxCycles;
+        triggerEndTalk = false;
+        movingPlayer = false;
     }
 
     void Update()
     {
+        #region DebugTesting
+        if(triggerEndTalk)
+        {
+            FinishTalking();
+        }
+        triggerEndTalk = false;
+        #endregion
+
         switch (state)
         {
         case 0:
@@ -42,11 +61,19 @@ public class GrabAndMove : MonoBehaviour
             {
                 state = 3;
                 target.setCanMove(false);
-                target.transform.parent = transform;
+                movingPlayer = true;
             }
             break;
         case 3:
-            state = 4;
+            if(cycles == 0)
+            {
+                state = 7;
+            }
+            else
+            {
+                state = 4;
+                --cycles;
+            }
             triggerTime = Time.time;
             grabPos = transform.position;
             SelectTarget();
@@ -58,7 +85,7 @@ public class GrabAndMove : MonoBehaviour
             {
                 state = 5;
                 target.setCanMove(true);
-                target.transform.parent = null;
+                movingPlayer = false;
             }
             break;
         case 5:
@@ -73,8 +100,47 @@ public class GrabAndMove : MonoBehaviour
                 state = 0;
             }
             break;
+        case 7:
+            transform.position = Vector3.Lerp(grabPos, talkPos, (Time.time - triggerTime)/placeTime);
+            transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/placeTime);
+            if(Time.time - triggerTime >= placeTime)
+            {
+                state = 8;
+            }
+            break;
+        case 8:
+            break;
+        case 9:
+            transform.position = Vector3.Lerp(talkPos, endPos, (Time.time - triggerTime)/placeTime);
+            transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/placeTime);
+            if(Time.time - triggerTime >= placeTime)
+            {
+                state = 10;
+                triggerTime = Time.time;
+                target.setCanMove(true);
+                movingPlayer = false;
+            }
+            break;
+        case 10:
+            transform.position = Vector3.Lerp(endPos, initialPos, (Time.time - triggerTime)/returnTime);
+            transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/returnTime);
+            if(Time.time - triggerTime >= returnTime)
+            {
+                state = -1;
+                cycles = maxCycles;
+            }
+            break;
         default:
             break;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if(movingPlayer)
+        {
+            target.transform.position = Vector3.Lerp(target.transform.position, transform.position - Vector3.up * grabHeightOffset, linearSnappiness);
+            target.transform.rotation = Quaternion.Slerp(target.transform.rotation, transform.rotation, angularSnappiness);
         }
     }
 
@@ -83,6 +149,16 @@ public class GrabAndMove : MonoBehaviour
         target = player;
         state = 0;
     }
+
+    public void FinishTalking()
+    {
+        if(state == 8)
+        {
+            state = 9;
+            triggerTime = Time.time;
+        }
+    }
+    
     IEnumerator WaitPatiently()
     {
         yield return new WaitForSeconds(patience);
@@ -90,7 +166,7 @@ public class GrabAndMove : MonoBehaviour
         state = 2;
     }
 
-    private void SelectTarget()
+    void SelectTarget()
     {
         float minDist = (targets[0] - transform.position).sqrMagnitude;
         targetPos = targets[0];
