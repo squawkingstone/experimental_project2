@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 93ad2e33106332848ab18f7cce7510ca
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Experimental_Same_Guy_SKIN:Character_GEO
+    100002: Experimental_Same_Guy_SKIN:Experimental_RIG:Clavicle_JNT
+    100004: Experimental_Same_Guy_SKIN:Experimental_RIG:CNTRLS
+    100006: Experimental_Same_Guy_SKIN:Experimental_RIG:Head_Tip_JNT
+    100008: Experimental_Same_Guy_SKIN:Experimental_RIG:JNTS_DONOTTOUCH
+    100010: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Ankle_IK
+    100012: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Ankle_JNT
+    100014: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Elbow_JNT
+    100016: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Elbow_JNT_CTRL
+    100018: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Elbow_JNT_CTRL_GRP
+    100020: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Fingers_JNT
+    100022: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Foot_CNTRL
+    100024: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Foot_CNTRL_GRP
+    100026: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Foot_IK
+    100028: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Knee_JNT
+    100030: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Knee_PV_CNTRL
+    100032: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Reverse_Foot_JNT
+    100034: Experimental_Same_Guy_SKIN:Experimental_RIG:L_RV_Ankle_JNT
+    100036: Experimental_Same_Guy_SKIN:Experimental_RIG:L_RV_Tip_JNT
+    100038: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_JNT
+    100040: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_JNT_CTRL
+    100042: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_JNT_CTRL_GRP
+    100044: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_Shrug_JNT
+    100046: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Thigh_JNT
+    100048: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Toes_JNT
+    100050: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Wrist_JNT
+    100052: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Wrist_JNT_CTRL
+    100054: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Wrist_JNT_CTRL_GRP
+    100056: Experimental_Same_Guy_SKIN:Experimental_RIG:Lower_Body_JNT
+    100058: Experimental_Same_Guy_SKIN:Experimental_RIG:Lower_Body_JNT_CTRL
+    100060: Experimental_Same_Guy_SKIN:Experimental_RIG:Lower_Body_JNT_CTRL_GRP
+    100062: Experimental_Same_Guy_SKIN:Experimental_RIG:Neck_JNT
+    100064: Experimental_Same_Guy_SKIN:Experimental_RIG:Neck_JNT_CTRL
+    100066: Experimental_Same_Guy_SKIN:Experimental_RIG:Neck_JNT_CTRL_GRP
+    100068: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Ankle_IK
+    100070: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Ankle_JNT
+    100072: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Elbow_JNT
+    100074: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Elbow_JNT_CTRL
+    100076: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Elbow_JNT_CTRL_GRP
+    100078: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Fingers_JNT
+    100080: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Foot_CNTRL
+    100082: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Foot_CNTRL_GRP
+    100084: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Foot_IK
+    100086: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Knee_JNT
+    100088: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Knee_PV_CNTRL
+    100090: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Reverse_Foot_JNT
+    100092: Experimental_Same_Guy_SKIN:Experimental_RIG:R_RV_Ankle_JNT
+    100094: Experimental_Same_Guy_SKIN:Experimental_RIG:R_RV_Tip_JNT
+    100096: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_JNT
+    100098: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_JNT_CTRL
+    100100: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_JNT_CTRL_GRP
+    100102: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_Shrug_JNT
+    100104: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Thigh_JNT
+    100106: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Toes_JNT
+    100108: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Wrist_JNT
+    100110: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Wrist_JNT_CTRL
+    100112: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Wrist_JNT_CTRL_GRP
+    100114: Experimental_Same_Guy_SKIN:Experimental_RIG:root_CNTRL
+    100116: Experimental_Same_Guy_SKIN:Experimental_RIG:root_CNTRL_GRP
+    100118: Experimental_Same_Guy_SKIN:Experimental_RIG:root_JNT
+    100120: Experimental_Same_Guy_SKIN:Experimental_RIG:Upper_Body_JNT
+    100122: Experimental_Same_Guy_SKIN:Experimental_RIG:Upper_Body_JNT_CTRL
+    100124: Experimental_Same_Guy_SKIN:Experimental_RIG:Upper_Body_JNT_CTRL_GRP
+    100126: Experimental_Same_Guy_SKIN:Same_Guy_Shirt
+    100128: //RootNode
+    400000: Experimental_Same_Guy_SKIN:Character_GEO
+    400002: Experimental_Same_Guy_SKIN:Experimental_RIG:Clavicle_JNT
+    400004: Experimental_Same_Guy_SKIN:Experimental_RIG:CNTRLS
+    400006: Experimental_Same_Guy_SKIN:Experimental_RIG:Head_Tip_JNT
+    400008: Experimental_Same_Guy_SKIN:Experimental_RIG:JNTS_DONOTTOUCH
+    400010: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Ankle_IK
+    400012: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Ankle_JNT
+    400014: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Elbow_JNT
+    400016: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Elbow_JNT_CTRL
+    400018: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Elbow_JNT_CTRL_GRP
+    400020: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Fingers_JNT
+    400022: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Foot_CNTRL
+    400024: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Foot_CNTRL_GRP
+    400026: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Foot_IK
+    400028: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Knee_JNT
+    400030: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Knee_PV_CNTRL
+    400032: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Reverse_Foot_JNT
+    400034: Experimental_Same_Guy_SKIN:Experimental_RIG:L_RV_Ankle_JNT
+    400036: Experimental_Same_Guy_SKIN:Experimental_RIG:L_RV_Tip_JNT
+    400038: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_JNT
+    400040: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_JNT_CTRL
+    400042: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_JNT_CTRL_GRP
+    400044: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Shoulder_Shrug_JNT
+    400046: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Thigh_JNT
+    400048: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Toes_JNT
+    400050: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Wrist_JNT
+    400052: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Wrist_JNT_CTRL
+    400054: Experimental_Same_Guy_SKIN:Experimental_RIG:L_Wrist_JNT_CTRL_GRP
+    400056: Experimental_Same_Guy_SKIN:Experimental_RIG:Lower_Body_JNT
+    400058: Experimental_Same_Guy_SKIN:Experimental_RIG:Lower_Body_JNT_CTRL
+    400060: Experimental_Same_Guy_SKIN:Experimental_RIG:Lower_Body_JNT_CTRL_GRP
+    400062: Experimental_Same_Guy_SKIN:Experimental_RIG:Neck_JNT
+    400064: Experimental_Same_Guy_SKIN:Experimental_RIG:Neck_JNT_CTRL
+    400066: Experimental_Same_Guy_SKIN:Experimental_RIG:Neck_JNT_CTRL_GRP
+    400068: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Ankle_IK
+    400070: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Ankle_JNT
+    400072: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Elbow_JNT
+    400074: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Elbow_JNT_CTRL
+    400076: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Elbow_JNT_CTRL_GRP
+    400078: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Fingers_JNT
+    400080: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Foot_CNTRL
+    400082: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Foot_CNTRL_GRP
+    400084: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Foot_IK
+    400086: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Knee_JNT
+    400088: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Knee_PV_CNTRL
+    400090: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Reverse_Foot_JNT
+    400092: Experimental_Same_Guy_SKIN:Experimental_RIG:R_RV_Ankle_JNT
+    400094: Experimental_Same_Guy_SKIN:Experimental_RIG:R_RV_Tip_JNT
+    400096: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_JNT
+    400098: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_JNT_CTRL
+    400100: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_JNT_CTRL_GRP
+    400102: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Shoulder_Shrug_JNT
+    400104: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Thigh_JNT
+    400106: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Toes_JNT
+    400108: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Wrist_JNT
+    400110: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Wrist_JNT_CTRL
+    400112: Experimental_Same_Guy_SKIN:Experimental_RIG:R_Wrist_JNT_CTRL_GRP
+    400114: Experimental_Same_Guy_SKIN:Experimental_RIG:root_CNTRL
+    400116: Experimental_Same_Guy_SKIN:Experimental_RIG:root_CNTRL_GRP
+    400118: Experimental_Same_Guy_SKIN:Experimental_RIG:root_JNT
+    400120: Experimental_Same_Guy_SKIN:Experimental_RIG:Upper_Body_JNT
+    400122: Experimental_Same_Guy_SKIN:Experimental_RIG:Upper_Body_JNT_CTRL
+    400124: Experimental_Same_Guy_SKIN:Experimental_RIG:Upper_Body_JNT_CTRL_GRP
+    400126: Experimental_Same_Guy_SKIN:Same_Guy_Shirt
+    400128: //RootNode
+    2100000: lambert1
+    4300000: Experimental_Same_Guy_SKIN:Character_GEO
+    4300002: Experimental_Same_Guy_SKIN:Same_Guy_Shirt
+    7400000: '@idle'
+    9500000: //RootNode
+    13700000: Experimental_Same_Guy_SKIN:Character_GEO
+    13700002: Experimental_Same_Guy_SKIN:Same_Guy_Shirt
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
