@@ -19,6 +19,7 @@ public class TextScroll : MonoBehaviour
     private bool complete;
     private bool isActive;
     private string[] textStrings;
+    private System.Action completeAction;
 
     void Awake()
     {
@@ -60,6 +61,10 @@ public class TextScroll : MonoBehaviour
                     {
                         isActive = false;
                         text.enabled = false;
+                        if(completeAction != null)
+                        {
+                            completeAction();
+                        }
                     }
                     else
                     {
@@ -84,12 +89,13 @@ public class TextScroll : MonoBehaviour
         }
     }
 
-    public void ScrollText(string[] text)
+    public void ScrollText(string[] text, System.Action completeCallback = null)
     {
         isActive = true;
         textStrings = text;
         textboxes = textStrings.Length;
         triggerTime = Time.time;
         complete = false;
+        completeAction = completeCallback;
     }
 }
