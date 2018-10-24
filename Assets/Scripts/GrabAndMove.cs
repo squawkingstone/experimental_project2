@@ -16,6 +16,8 @@ public class GrabAndMove : MonoBehaviour
     [SerializeField] private Vector3 talkPos;
     [SerializeField] private Vector3 endPos;
     [SerializeField] private int maxCycles;
+    [SerializeField] private string[] moveStrings;
+    [SerializeField] private string[] talkStrings;
     /*DEBUG*/[SerializeField] private bool triggerEndTalk;
 
     private Vector3 initialPos;
@@ -26,6 +28,7 @@ public class GrabAndMove : MonoBehaviour
     private PlayerControl target;
     private int cycles;
     bool movingPlayer;
+    TextScroll textScroll;
 
     void Awake()
     {
@@ -34,6 +37,7 @@ public class GrabAndMove : MonoBehaviour
         cycles = maxCycles;
         triggerEndTalk = false;
         movingPlayer = false;
+        textScroll = FindObjectOfType<TextScroll>();
     }
 
     void Update()
@@ -68,11 +72,14 @@ public class GrabAndMove : MonoBehaviour
             if(cycles == 0)
             {
                 state = 7;
+                textScroll.ScrollText(talkStrings, FinishTalking);
             }
             else
             {
                 state = 4;
                 --cycles;
+                int index = Random.Range(0, moveStrings.Length);
+                textScroll.ScrollText(new[] {moveStrings[index]});
             }
             triggerTime = Time.time;
             grabPos = transform.position;

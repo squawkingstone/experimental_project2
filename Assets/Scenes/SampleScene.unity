@@ -424,7 +424,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -633,6 +633,16 @@ MonoBehaviour:
   talkPos: {x: -9, y: 6, z: -7.82}
   endPos: {x: -9, y: 3, z: 0}
   maxCycles: 10
+  moveStrings:
+  - No
+  - Bad
+  - This is pointless
+  - '*Grumble, grumble.*'
+  talkStrings:
+  - Why are you doing this?
+  - Are you expecting some kind of reward or something?
+  - You're just wasting both of our time.
+  - Fine you win.  Have your stupid reward.  I'm leaving.
   triggerEndTalk: 0
 --- !u!23 &1248101425
 MeshRenderer:
