@@ -46,7 +46,7 @@ public class DungeonGenerator : MonoBehaviour
 	[SerializeField] float margin;
 
 	[SerializeField] RoomPrefabs room_prefabs;
-	[SerializeField] GameObject  hall_prefab;
+	[SerializeField] GameObject[]  hall_prefab;
 
 	[SerializeField] GameObject player;
 	[SerializeField] GameObject level_transition;
@@ -201,7 +201,7 @@ public class DungeonGenerator : MonoBehaviour
 
 		foreach (Edge e in connections)
 		{
-			Instantiate(hall_prefab, e.GetEdgePos(room_size, margin), 
+			Instantiate(hall_prefab[Random.Range(0, hall_prefab.Length)], e.GetEdgePos(room_size, margin), 
 				(e.v.x == e.u.x) ? Quaternion.identity : Quaternion.AngleAxis(90, Vector3.up));
 		}
 
