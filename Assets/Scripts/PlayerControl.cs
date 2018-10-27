@@ -74,7 +74,7 @@ public class PlayerControl : MonoBehaviour
             grounded = true;
         }
 
-        if(grounded && jump)
+        if(grounded && jump && canMove)
         {
             rb.AddForce(movementNormal * jumpForce * rb.mass, ForceMode.Impulse);
         }
