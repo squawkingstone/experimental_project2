@@ -360,6 +360,8 @@ MonoBehaviour:
   hall_prefab:
   - {fileID: 1642986041164600, guid: 7e16504f76f8c1548a883bcbdfbf1fc1, type: 2}
   - {fileID: 1520055744725962, guid: 4342166496b9dc447a0824e91b981848, type: 2}
+  enemy_prefab: {fileID: 1743653301601982, guid: 1d1906f7a35545542909e756b03b6572,
+    type: 2}
   player: {fileID: 470665937}
   level_transition: {fileID: 1193871645}
 --- !u!4 &1363270473

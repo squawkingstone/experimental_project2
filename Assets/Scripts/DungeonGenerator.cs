@@ -45,9 +45,10 @@ public class DungeonGenerator : MonoBehaviour
 	[SerializeField] float room_size;
 	[SerializeField] float margin;
 
-	[SerializeField] RoomPrefabs room_prefabs;
-	[SerializeField] GameObject[]  hall_prefab;
-
+	[SerializeField] RoomPrefabs  room_prefabs;
+	[SerializeField] GameObject[] hall_prefab;
+	[SerializeField] GameObject   enemy_prefab;
+ 
 	[SerializeField] GameObject player;
 	[SerializeField] GameObject level_transition;
 
@@ -62,7 +63,6 @@ public class DungeonGenerator : MonoBehaviour
 		PlaceRooms(graph);
 	}
 
-	[ContextMenu("Place Rooms")]
 	void PlaceRooms(AdjacencyList graph)
 	{
 		// find longest path
@@ -111,6 +111,7 @@ public class DungeonGenerator : MonoBehaviour
 		GameObject prefab = null; Quaternion q = Quaternion.identity;
 		Vector2Int v = new Vector2Int(x, y);
 
+		bool spawn_enemies = false;
 		switch (graph[v].Count)
 		{
 			case 1:
@@ -131,6 +132,7 @@ public class DungeonGenerator : MonoBehaviour
 					prefab = prefabs.TwoDoorStraight[Random.Range(0, prefabs.TwoDoorStraight.Length)];
 					q = Quaternion.AngleAxis(Vector2.Angle(graph[v][0]-v, Vector2.up), Vector3.up);
 				}
+				spawn_enemies = (Random.Range(0, 4) == 0) ? false : true;
 				break;
 			case 3:
 				prefab = prefabs.ThreeDoor[Random.Range(0, prefabs.ThreeDoor.Length)];
@@ -141,6 +143,7 @@ public class DungeonGenerator : MonoBehaviour
 						: graph[v][0]
 					);
 				q = Quaternion.AngleAxis(Vector2.SignedAngle(w-v, Vector2.up), Vector3.up);
+				spawn_enemies = (Random.Range(0, 4) == 0) ? false : true;
 				break;
 			default:
 				prefab = prefabs.FourDoor[Random.Range(0, prefabs.FourDoor.Length)];
@@ -156,8 +159,23 @@ public class DungeonGenerator : MonoBehaviour
 			prefab = prefabs.OneDoor[0];
 		}
 
-		GameObject room = Instantiate(prefab, (Vector3.right * x * (room_size + margin)) +
-			(Vector3.forward * y * (room_size + margin)), q);
+		Vector3 pos = (Vector3.right * x * (room_size + margin)) +
+			(Vector3.forward * y * (room_size + margin));
+		GameObject room = Instantiate(prefab, pos, q);
+
+		if (spawn_enemies)
+		{
+			int num_enemies = Random.Range(1, 4);
+			Quaternion offset = Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.up);
+			for (int i = 0; i < num_enemies; i++)
+			{
+				Instantiate(enemy_prefab, 
+					pos + (Quaternion.AngleAxis((float)(360*(i+1)/num_enemies),Vector3.up)
+						 * offset
+						 * (Vector3.forward * room_size/3)), 
+					Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.up));
+			}
+		}
 
 		if (start)
 		{
@@ -169,7 +187,6 @@ public class DungeonGenerator : MonoBehaviour
 		}
 	}
 
-	[ContextMenu("Place Hallway")]
 	AdjacencyList PlaceHallways()
 	{
 		// Implementation of the random walk spanning tree method, runs in worst case O(n^3) which
