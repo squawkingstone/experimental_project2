@@ -357,8 +357,9 @@ MonoBehaviour:
     - {fileID: 1262764995628254, guid: 370fd6b4f340cd543aced16903876a4d, type: 2}
     FourDoor:
     - {fileID: 1458429865108614, guid: fa499f031aead9d4d8c2933d2474e491, type: 2}
-  hall_prefab: {fileID: 1642986041164600, guid: 7e16504f76f8c1548a883bcbdfbf1fc1,
-    type: 2}
+  hall_prefab:
+  - {fileID: 1642986041164600, guid: 7e16504f76f8c1548a883bcbdfbf1fc1, type: 2}
+  - {fileID: 1520055744725962, guid: 4342166496b9dc447a0824e91b981848, type: 2}
   player: {fileID: 470665937}
   level_transition: {fileID: 1193871645}
 --- !u!4 &1363270473
