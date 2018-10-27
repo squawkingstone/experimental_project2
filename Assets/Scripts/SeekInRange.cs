@@ -12,11 +12,13 @@ public class SeekInRange : MonoBehaviour
 
     Transform tracked;
     Rigidbody rb;
+    Animator anim;
 
     void Start()
     {
         tracked = FindObjectOfType<PlayerControl>().transform;
         rb = GetComponent<Rigidbody>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
@@ -53,6 +55,15 @@ public class SeekInRange : MonoBehaviour
             vel = vel.normalized * maxSpeed;
             rb.velocity = new Vector3(0, rb.velocity.y, 0) + vel;
         }
+ 
+        if (rb.velocity.magnitude > 0.1f)
+        {
+            anim.gameObject.transform.forward = Vector3.Slerp(
+                anim.gameObject.transform.forward, 
+                Vector3.ProjectOnPlane((tracked.position - transform.position).normalized, Vector3.up),
+                0.1f);
+        }
+        anim.SetFloat("Speed", rb.velocity.magnitude);
     }
 
     void DropTarget()

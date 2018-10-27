@@ -10,11 +10,13 @@ public class DieAndFallover : MonoBehaviour
 
     private bool playing;
     private float startTime;
+    Animator anim;
 
     void Awake()
     {
         playing = false;
         startTime = -1;
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -37,6 +39,8 @@ public class DieAndFallover : MonoBehaviour
         {
             m.enabled = false;
         }
+        anim.SetBool("Attack", false);
+        anim.SetFloat("Speed", 0f);
     }
 
     IEnumerator DestroySelf()

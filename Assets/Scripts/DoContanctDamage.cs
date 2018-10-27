@@ -7,10 +7,12 @@ public class DoContanctDamage : MonoBehaviour
     [SerializeField] private float damageCooldown;
     [SerializeField] private int damage;
 
+    Animator anim;
     private Dictionary<Damage, float> damageTimers;
 
     void Awake()
     {
+        anim = GetComponentInChildren<Animator>();
         damageTimers = new Dictionary<Damage, float>();
     }
 
@@ -20,6 +22,7 @@ public class DoContanctDamage : MonoBehaviour
         Damage d = col.gameObject.GetComponent<Damage>();
         if(d != null)
         {
+            anim.SetBool("Attack", true);
             damageTimers[d] = damageCooldown;
         }
     }
@@ -45,6 +48,7 @@ public class DoContanctDamage : MonoBehaviour
         Damage d = col.gameObject.GetComponent<Damage>();
         if(d != null && damageTimers.ContainsKey(d))
         {
+            anim.SetBool("Attack", false);
             damageTimers.Remove(d);
         }
     }
