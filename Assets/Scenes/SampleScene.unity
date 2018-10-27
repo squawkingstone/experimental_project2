@@ -747,6 +747,11 @@ MonoBehaviour:
   openTime: 0.5
   turn: 90
   activeColor: {r: 1, g: 1, b: 0, a: 0}
+  rewardText:
+  - You found a sword!
+  - It is the same as the one you laready have.
+  instantiate: {fileID: 1645136270267612, guid: 97b1c9b51f4f30f488ccfad5fc80539a,
+    type: 2}
 --- !u!1001 &1398344540
 Prefab:
   m_ObjectHideFlags: 0
