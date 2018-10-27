@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93ad2e33106332848ab18f7cce7510ca
+guid: 90bd4982a025f0d4da3702bfca13009d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -136,7 +136,7 @@ ModelImporter:
     2100000: lambert1
     4300000: Experimental_Same_Guy_SKIN:Character_GEO
     4300002: Experimental_Same_Guy_SKIN:Same_Guy_Shirt
-    7400000: '@idle'
+    7400000: idle
     9500000: //RootNode
     13700000: Experimental_Same_Guy_SKIN:Character_GEO
     13700002: Experimental_Same_Guy_SKIN:Same_Guy_Shirt
@@ -167,11 +167,39 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: '@idle'
+      firstFrame: 1
+      lastFrame: 229
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.15
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -190,8 +218,8 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.15
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
