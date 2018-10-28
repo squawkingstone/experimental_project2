@@ -6,6 +6,8 @@ using UnityEngine;
 public class IkHandControl : MonoBehaviour
 {
     [SerializeField] public Transform trackedObject;
+    [SerializeField] public Vector3 offset;
+    [SerializeField] public Vector3 backOfHand;
     protected Animator animator;
 
     void Awake()
@@ -18,7 +20,9 @@ public class IkHandControl : MonoBehaviour
         if(animator != null)
         {
             animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1);
-            animator.SetIKPosition(AvatarIKGoal.LeftHand, trackedObject.position);
+            animator.SetIKPosition(AvatarIKGoal.LeftHand, trackedObject.position + offset);
+            animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1);
+            animator.SetIKRotation(AvatarIKGoal.LeftHand, Quaternion.LookRotation(-offset.normalized, backOfHand));
         }
     }
 }
