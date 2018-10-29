@@ -6,27 +6,24 @@ public class SwordSwipe : MonoBehaviour
 {
     [SerializeField] private float liveTime;
     [SerializeField] private float coolDown;
-    [SerializeField] private GameObject swipe;
     private PlayerControl pc;
     private float attackTime;
-    Animator anim;
+    private Animator anim;
+    private Attack attack;
 
     void Awake()
     {
         pc = GetComponent<PlayerControl>();
         attackTime = -coolDown;
         anim = GetComponentInChildren<Animator>();
-    }
-
-    void Start()
-    {
-        swipe.SetActive(false);
+        attack = GetComponentInChildren<Attack>();
     }
 
     void Update()
     {
         if(pc.attackDown && Time.time - attackTime >= coolDown)
         {
+            attackTime = Time.time;
             StartCoroutine(Swing());
         }
     }
@@ -34,9 +31,9 @@ public class SwordSwipe : MonoBehaviour
     IEnumerator Swing()
     {
         anim.SetBool("Attack", true);
-        swipe.SetActive(true);
+        attack.Activate();
         yield return new WaitForSeconds(liveTime);
         anim.SetBool("Attack", false);
-        swipe.SetActive(false);
+        attack.Deactivate();
     }
 }
