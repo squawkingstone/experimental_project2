@@ -18,7 +18,9 @@ public class GrabAndMove : MonoBehaviour
     [SerializeField] private int maxCycles;
     [SerializeField] private string[] moveStrings;
     [SerializeField] private string[] talkStrings;
-    /*DEBUG*/[SerializeField] private bool triggerEndTalk;
+    [SerializeField] private AudioClip pickupClip;
+    [SerializeField] private AudioClip talkClip;
+    [SerializeField] private AudioSource audioSource;
 
     private Vector3 initialPos;
     private Vector3 grabPos;
@@ -35,21 +37,12 @@ public class GrabAndMove : MonoBehaviour
         state = -1;
         initialPos = transform.position;
         cycles = maxCycles;
-        triggerEndTalk = false;
         movingPlayer = false;
         textScroll = FindObjectOfType<TextScroll>();
     }
 
     void Update()
     {
-        #region DebugTesting
-        if(triggerEndTalk)
-        {
-            FinishTalking();
-        }
-        triggerEndTalk = false;
-        #endregion
-
         switch (state)
         {
         case 0:
@@ -65,6 +58,9 @@ public class GrabAndMove : MonoBehaviour
             {
                 state = 3;
                 target.setCanMove(false);
+                audioSource.loop = false;
+                audioSource.clip = pickupClip;
+                audioSource.Play();
                 movingPlayer = true;
             }
             break;
@@ -113,11 +109,15 @@ public class GrabAndMove : MonoBehaviour
             if(Time.time - triggerTime >= placeTime)
             {
                 state = 8;
+                audioSource.clip = talkClip;
+                audioSource.loop = true;
+                audioSource.Play();
             }
             break;
         case 8:
             break;
         case 9:
+            if(audioSource.isPlaying) audioSource.Stop();
             transform.position = Vector3.Lerp(talkPos, endPos, (Time.time - triggerTime)/placeTime);
             transform.position += Vector3.up * heightCurve.Evaluate((Time.time - triggerTime)/placeTime);
             if(Time.time - triggerTime >= placeTime)
