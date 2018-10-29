@@ -61,6 +61,10 @@ public class DungeonGenerator : MonoBehaviour
 
 		// Place Rooms
 		PlaceRooms(graph);
+
+		// Place Minimap Hallways
+		Minimap map = GetComponent<Minimap>();
+		map.InitMinimap(room_size, margin, width, height, graph);
 	}
 
 	void PlaceRooms(AdjacencyList graph)

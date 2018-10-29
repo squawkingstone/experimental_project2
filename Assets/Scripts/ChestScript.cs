@@ -15,18 +15,22 @@ public class ChestScript : MonoBehaviour
     private Color startColor;
     private float triggerTime;
     private bool triggered;
+    private bool active;
     private TextScroll textScroller;
     private Quaternion frameTurn;
     private PlayerControl playerControl;
     private GameObject spawned;
+    private new AudioSource audio;
 
     void Awake()
     {
         renderer = GetComponent<MeshRenderer>();
         triggered = false;
+        active = false;
         frameTurn = Quaternion.AngleAxis(turn * Time.fixedDeltaTime / openTime, Vector3.forward);
         collider = GetComponent<Collider>();
         textScroller = FindObjectOfType<TextScroll>();
+        audio = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -36,13 +40,13 @@ public class ChestScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(triggered && Time.time - triggerTime <= openTime)
+        if(active && Time.time - triggerTime <= openTime)
         {
             transform.rotation *= frameTurn;
         }
-        else if(triggered)
+        else if(active)
         {
-            triggered = false;
+            active = false;
             if(textScroller != null)
             {
                 playerControl.setCanMove(false);
@@ -71,12 +75,14 @@ public class ChestScript : MonoBehaviour
         PlayerControl player = col.gameObject.GetComponent<PlayerControl>();
         if(player == null) return;
 
-        if(player.actionDown)
+        if(player.actionDown && !triggered)
         {
             triggered = true;
+            active = true;
             triggerTime = Time.time;
             collider.enabled = false;
             renderer.material.color = startColor;
+            audio.Play();
         }
     }
 
