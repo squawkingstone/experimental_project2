@@ -147,7 +147,6 @@ GameObject:
   - component: {fileID: 33585891465218526}
   - component: {fileID: 23450150825447436}
   - component: {fileID: 65219341637036508}
-  - component: {fileID: 114827203576313112}
   m_Layer: 0
   m_Name: Chest_Top
   m_TagString: Untagged
@@ -805,7 +804,6 @@ GameObject:
   - component: {fileID: 33072244738048622}
   - component: {fileID: 23220699629191216}
   - component: {fileID: 65260816327110936}
-  - component: {fileID: 114857652853025952}
   m_Layer: 0
   m_Name: Chest_Top
   m_TagString: Untagged
@@ -875,7 +873,6 @@ GameObject:
   - component: {fileID: 33493202809347518}
   - component: {fileID: 23865524705394984}
   - component: {fileID: 65253294124228996}
-  - component: {fileID: 114599922704846982}
   m_Layer: 0
   m_Name: Chest_Top
   m_TagString: Untagged
@@ -3136,63 +3133,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114599922704846982
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1916177459198260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a56b2452802e04bae48a6591c03b2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openTime: 0.5
-  turn: 90
-  activeColor: {r: 1, g: 1, b: 0, a: 0}
-  rewardText:
-  - You found a sword!
-  - It is the same as the one you laready have.
-  instantiate: {fileID: 1645136270267612, guid: 97b1c9b51f4f30f488ccfad5fc80539a,
-    type: 2}
---- !u!114 &114827203576313112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1135896675348642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a56b2452802e04bae48a6591c03b2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openTime: 0.5
-  turn: 90
-  activeColor: {r: 1, g: 1, b: 0, a: 0}
-  rewardText:
-  - You found a sword!
-  - It is the same as the one you laready have.
-  instantiate: {fileID: 1645136270267612, guid: 97b1c9b51f4f30f488ccfad5fc80539a,
-    type: 2}
---- !u!114 &114857652853025952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1855558758664028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a56b2452802e04bae48a6591c03b2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openTime: 0.5
-  turn: 90
-  activeColor: {r: 1, g: 1, b: 0, a: 0}
-  rewardText:
-  - You found a sword!
-  - It is the same as the one you laready have.
-  instantiate: {fileID: 1645136270267612, guid: 97b1c9b51f4f30f488ccfad5fc80539a,
-    type: 2}
 --- !u!198 &198079286227771916
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -2835,7 +2835,7 @@ Prefab:
     - target: {fileID: 114244473865234484, guid: d70343f39209a64428c2002ea1ab465d,
         type: 2}
       propertyPath: nextLevel
-      value: Survey
+      value: BossScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d70343f39209a64428c2002ea1ab465d, type: 2}
