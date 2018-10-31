@@ -21,14 +21,12 @@ public class Minimap : MonoBehaviour
 	int m_Width = 0;
 	int m_Height = 0;
 	AdjacencyList m_Graph;
-    bool playerAlive;
 
 	int x, y;
 
 	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player").transform;
-        playerAlive = true;
 	}
 
 	public void InitMinimap(float size, float margin, int width, int height, AdjacencyList graph)
@@ -79,14 +77,9 @@ public class Minimap : MonoBehaviour
 
 	int GetPlayerCoord()
 	{
-        if(!playerAlive) return 0;
 		x = Mathf.RoundToInt(player.position.x / (m_Size + m_Margin));
 		y = Mathf.RoundToInt(player.position.z / (m_Size + m_Margin));
 		return y * m_Width + x;
 	}
-
-    void DropTarget()
-    {
-        playerAlive = false;
-    }
+	
 }
