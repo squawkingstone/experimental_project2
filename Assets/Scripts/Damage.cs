@@ -39,6 +39,7 @@ public class Damage : MonoBehaviour
         if(!godMode)
         {
             health -= amount;
+            narration.PlayFightClip();
         }
         narration.PlayFightClip();
         if(text != null)
