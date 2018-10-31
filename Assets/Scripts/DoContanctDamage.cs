@@ -6,14 +6,17 @@ public class DoContanctDamage : MonoBehaviour
 {
     [SerializeField] private float damageCooldown;
     [SerializeField] private int damage;
+    [SerializeField] private AudioClip attackClip;
 
-    Animator anim;
+    private Animator anim;
+    private AudioSource source;
     private Dictionary<Damage, float> damageTimers;
 
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
         damageTimers = new Dictionary<Damage, float>();
+        source = GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter(Collision col)
@@ -38,6 +41,8 @@ public class DoContanctDamage : MonoBehaviour
             {
                 damageTimers[d] = damageCooldown;
                 d.TakeDamage(damage);
+                source.clip = attackClip;
+                source.Play();
             }
         }
     }
