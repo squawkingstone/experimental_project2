@@ -60,6 +60,7 @@ public class PlayerControl : MonoBehaviour
         source = GetComponent<AudioSource>();
         lastClink = Time.time;
         playerAnim = GetComponent<PlayerAnim>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
