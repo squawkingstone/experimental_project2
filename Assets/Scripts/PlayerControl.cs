@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -185,6 +186,7 @@ public class PlayerControl : MonoBehaviour
         {
             g.SendMessage("DropTarget", SendMessageOptions.DontRequireReceiver);
         }
+        SceneManager.LoadScene("Town");
     }
 
     public void setCanMove(bool value)
