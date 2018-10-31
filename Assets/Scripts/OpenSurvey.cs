@@ -9,7 +9,6 @@ public class OpenSurvey : MonoBehaviour {
 
 	void Start()
 	{
-		Cursor.lockState = CursorLockMode.Confined;
 		Button b = GetComponent<Button>();
 		b.onClick.AddListener(() => {Application.OpenURL(url);});
 	}

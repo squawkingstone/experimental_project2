@@ -22114,7 +22114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cdfb6df9b7bfb49a9920dbfd92a0a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: https://docs.google.com/forms/d/e/1FAIpQLSfDk_7bQSEMW2C2iz-JtemmFXBWYa1_7Vh3qDiTtnZayU3l0w/viewform
+  url: www.google.com
 --- !u!1 &1697766262
 GameObject:
   m_ObjectHideFlags: 0
