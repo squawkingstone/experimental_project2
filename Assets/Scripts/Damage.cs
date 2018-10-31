@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class Damage : MonoBehaviour
 {
     [SerializeField] private uint maxHealth;
+    [SerializeField] private bool godMode = false;
     [SerializeField] private Text text;
     [SerializeField] private AudioClip playOnHurt;
+    [SerializeField] private AudioClip playOnDeath;
     
     private int health;
     private new AudioSource audio;
@@ -34,7 +36,10 @@ public class Damage : MonoBehaviour
 
     public bool TakeDamage(int amount)
     {
-        health -= amount;
+        if(!godMode)
+        {
+            health -= amount;
+        }
         narration.PlayFightClip();
         if(text != null)
         {
@@ -49,6 +54,8 @@ public class Damage : MonoBehaviour
             {
                 daf.Die();
                 isAlive = false;
+                audio.clip = playOnDeath;
+                audio.Play();
             }
             else
             {

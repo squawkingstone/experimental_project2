@@ -1,100 +1,134 @@
 fileFormatVersion: 2
-guid: 05aa1a571f0d33741a75093ad5705a6a
+guid: 3fcfbfe92816ef74ea6e694c74cdace6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Experimental_RIG:Clavicle_JNT
-    100002: Experimental_RIG:Head_Tip_JNT
-    100004: Experimental_RIG:JNTS_DONOTTOUCH
-    100006: Experimental_RIG:L_Ankle_IK
-    100008: Experimental_RIG:L_Ankle_JNT
-    100010: Experimental_RIG:L_Elbow_JNT
-    100012: Experimental_RIG:L_Fingers_JNT
-    100014: Experimental_RIG:L_Foot_IK
-    100016: Experimental_RIG:L_Knee_JNT
-    100018: Experimental_RIG:L_Reverse_Foot_JNT
-    100020: Experimental_RIG:L_RV_Ankle_JNT
-    100022: Experimental_RIG:L_RV_Tip_JNT
-    100024: Experimental_RIG:L_Shoulder_JNT
-    100026: Experimental_RIG:L_Shoulder_Shrug_JNT
-    100028: Experimental_RIG:L_Thigh_JNT
-    100030: Experimental_RIG:L_Toes_JNT
-    100032: Experimental_RIG:L_Wrist_JNT
-    100034: Experimental_RIG:Lower_Body_JNT
-    100036: Experimental_RIG:Neck_JNT
-    100038: Experimental_RIG:R_Ankle_IK
-    100040: Experimental_RIG:R_Ankle_JNT
-    100042: Experimental_RIG:R_Elbow_JNT
-    100044: Experimental_RIG:R_Fingers_JNT
-    100046: Experimental_RIG:R_Foot_IK
-    100048: Experimental_RIG:R_Knee_JNT
-    100050: Experimental_RIG:R_Reverse_Foot_JNT
-    100052: Experimental_RIG:R_RV_Ankle_JNT
-    100054: Experimental_RIG:R_RV_Tip_JNT
-    100056: Experimental_RIG:R_Shoulder_JNT
-    100058: Experimental_RIG:R_Shoulder_Shrug_JNT
-    100060: Experimental_RIG:R_Thigh_JNT
-    100062: Experimental_RIG:R_Toes_JNT
-    100064: Experimental_RIG:R_Wrist_JNT
-    100066: Experimental_RIG:root_JNT
-    100068: Experimental_RIG:Upper_Body_JNT
-    100070: L_Arm_IK
-    100072: L_Hand_GEO
-    100074: R_Hand_GEO
-    100076: Skele_Head
-    100078: Skele_L_Arm
-    100080: Skele_L_Forearm
-    100082: Skele_R_Arm
-    100084: Skele_R_Forearm
-    100086: Skele_Ribs
-    100088: //RootNode
-    100090: Skeleton
+    100002: Experimental_RIG:CNTRLS
+    100004: Experimental_RIG:Head_Tip_JNT
+    100006: Experimental_RIG:JNTS_DONOTTOUCH
+    100008: Experimental_RIG:L_Ankle_IK
+    100010: Experimental_RIG:L_Ankle_JNT
+    100012: Experimental_RIG:L_Elbow_JNT
+    100014: Experimental_RIG:L_Fingers_JNT
+    100016: Experimental_RIG:L_Foot_IK
+    100018: Experimental_RIG:L_Knee_JNT
+    100020: Experimental_RIG:L_Reverse_Foot_JNT
+    100022: Experimental_RIG:L_RV_Ankle_JNT
+    100024: Experimental_RIG:L_RV_Tip_JNT
+    100026: Experimental_RIG:L_Shoulder_JNT
+    100028: Experimental_RIG:L_Shoulder_Shrug_JNT
+    100030: Experimental_RIG:L_Thigh_JNT
+    100032: Experimental_RIG:L_Toes_JNT
+    100034: Experimental_RIG:L_Wrist_JNT
+    100036: Experimental_RIG:Lower_Body_JNT
+    100038: Experimental_RIG:Neck_JNT
+    100040: Experimental_RIG:Neck_JNT_CTRL
+    100042: Experimental_RIG:Neck_JNT_CTRL_GRP
+    100044: Experimental_RIG:R_Ankle_IK
+    100046: Experimental_RIG:R_Ankle_JNT
+    100048: Experimental_RIG:R_Elbow_JNT
+    100050: Experimental_RIG:R_Elbow_JNT_CTRL
+    100052: Experimental_RIG:R_Elbow_JNT_CTRL_GRP
+    100054: Experimental_RIG:R_Fingers_JNT
+    100056: Experimental_RIG:R_Foot_IK
+    100058: Experimental_RIG:R_Knee_JNT
+    100060: Experimental_RIG:R_Reverse_Foot_JNT
+    100062: Experimental_RIG:R_RV_Ankle_JNT
+    100064: Experimental_RIG:R_RV_Tip_JNT
+    100066: Experimental_RIG:R_Shoulder_JNT
+    100068: Experimental_RIG:R_Shoulder_JNT_CTRL
+    100070: Experimental_RIG:R_Shoulder_JNT_CTRL_GRP
+    100072: Experimental_RIG:R_Shoulder_Shrug_JNT
+    100074: Experimental_RIG:R_Thigh_JNT
+    100076: Experimental_RIG:R_Toes_JNT
+    100078: Experimental_RIG:R_Wrist_JNT
+    100080: Experimental_RIG:R_Wrist_JNT_CTRL
+    100082: Experimental_RIG:R_Wrist_JNT_CTRL_GRP
+    100084: Experimental_RIG:root_CNTRL
+    100086: Experimental_RIG:root_CNTRL_GRP
+    100088: Experimental_RIG:root_JNT
+    100090: Experimental_RIG:Upper_Body_JNT
+    100092: Experimental_RIG:Upper_Body_JNT_CTRL
+    100094: Experimental_RIG:Upper_Body_JNT_CTRL_GRP
+    100096: L_Arm_IK
+    100098: L_Elbow_PV
+    100100: L_Elbow_PV_OFFGRP
+    100102: L_Hand_GEO
+    100104: L_Hand_IK_CNTRL
+    100106: L_Hand_IK_CNTRL_OFFGRP
+    100108: R_Hand_GEO
+    100110: Skele_Head
+    100112: Skele_L_Arm
+    100114: Skele_L_Forearm
+    100116: Skele_R_Arm
+    100118: Skele_R_Forearm
+    100120: Skele_Ribs
+    100122: //RootNode
+    100124: Skeleton_GEO
     400000: Experimental_RIG:Clavicle_JNT
-    400002: Experimental_RIG:Head_Tip_JNT
-    400004: Experimental_RIG:JNTS_DONOTTOUCH
-    400006: Experimental_RIG:L_Ankle_IK
-    400008: Experimental_RIG:L_Ankle_JNT
-    400010: Experimental_RIG:L_Elbow_JNT
-    400012: Experimental_RIG:L_Fingers_JNT
-    400014: Experimental_RIG:L_Foot_IK
-    400016: Experimental_RIG:L_Knee_JNT
-    400018: Experimental_RIG:L_Reverse_Foot_JNT
-    400020: Experimental_RIG:L_RV_Ankle_JNT
-    400022: Experimental_RIG:L_RV_Tip_JNT
-    400024: Experimental_RIG:L_Shoulder_JNT
-    400026: Experimental_RIG:L_Shoulder_Shrug_JNT
-    400028: Experimental_RIG:L_Thigh_JNT
-    400030: Experimental_RIG:L_Toes_JNT
-    400032: Experimental_RIG:L_Wrist_JNT
-    400034: Experimental_RIG:Lower_Body_JNT
-    400036: Experimental_RIG:Neck_JNT
-    400038: Experimental_RIG:R_Ankle_IK
-    400040: Experimental_RIG:R_Ankle_JNT
-    400042: Experimental_RIG:R_Elbow_JNT
-    400044: Experimental_RIG:R_Fingers_JNT
-    400046: Experimental_RIG:R_Foot_IK
-    400048: Experimental_RIG:R_Knee_JNT
-    400050: Experimental_RIG:R_Reverse_Foot_JNT
-    400052: Experimental_RIG:R_RV_Ankle_JNT
-    400054: Experimental_RIG:R_RV_Tip_JNT
-    400056: Experimental_RIG:R_Shoulder_JNT
-    400058: Experimental_RIG:R_Shoulder_Shrug_JNT
-    400060: Experimental_RIG:R_Thigh_JNT
-    400062: Experimental_RIG:R_Toes_JNT
-    400064: Experimental_RIG:R_Wrist_JNT
-    400066: Experimental_RIG:root_JNT
-    400068: Experimental_RIG:Upper_Body_JNT
-    400070: L_Arm_IK
-    400072: L_Hand_GEO
-    400074: R_Hand_GEO
-    400076: Skele_Head
-    400078: Skele_L_Arm
-    400080: Skele_L_Forearm
-    400082: Skele_R_Arm
-    400084: Skele_R_Forearm
-    400086: Skele_Ribs
-    400088: //RootNode
-    400090: Skeleton
+    400002: Experimental_RIG:CNTRLS
+    400004: Experimental_RIG:Head_Tip_JNT
+    400006: Experimental_RIG:JNTS_DONOTTOUCH
+    400008: Experimental_RIG:L_Ankle_IK
+    400010: Experimental_RIG:L_Ankle_JNT
+    400012: Experimental_RIG:L_Elbow_JNT
+    400014: Experimental_RIG:L_Fingers_JNT
+    400016: Experimental_RIG:L_Foot_IK
+    400018: Experimental_RIG:L_Knee_JNT
+    400020: Experimental_RIG:L_Reverse_Foot_JNT
+    400022: Experimental_RIG:L_RV_Ankle_JNT
+    400024: Experimental_RIG:L_RV_Tip_JNT
+    400026: Experimental_RIG:L_Shoulder_JNT
+    400028: Experimental_RIG:L_Shoulder_Shrug_JNT
+    400030: Experimental_RIG:L_Thigh_JNT
+    400032: Experimental_RIG:L_Toes_JNT
+    400034: Experimental_RIG:L_Wrist_JNT
+    400036: Experimental_RIG:Lower_Body_JNT
+    400038: Experimental_RIG:Neck_JNT
+    400040: Experimental_RIG:Neck_JNT_CTRL
+    400042: Experimental_RIG:Neck_JNT_CTRL_GRP
+    400044: Experimental_RIG:R_Ankle_IK
+    400046: Experimental_RIG:R_Ankle_JNT
+    400048: Experimental_RIG:R_Elbow_JNT
+    400050: Experimental_RIG:R_Elbow_JNT_CTRL
+    400052: Experimental_RIG:R_Elbow_JNT_CTRL_GRP
+    400054: Experimental_RIG:R_Fingers_JNT
+    400056: Experimental_RIG:R_Foot_IK
+    400058: Experimental_RIG:R_Knee_JNT
+    400060: Experimental_RIG:R_Reverse_Foot_JNT
+    400062: Experimental_RIG:R_RV_Ankle_JNT
+    400064: Experimental_RIG:R_RV_Tip_JNT
+    400066: Experimental_RIG:R_Shoulder_JNT
+    400068: Experimental_RIG:R_Shoulder_JNT_CTRL
+    400070: Experimental_RIG:R_Shoulder_JNT_CTRL_GRP
+    400072: Experimental_RIG:R_Shoulder_Shrug_JNT
+    400074: Experimental_RIG:R_Thigh_JNT
+    400076: Experimental_RIG:R_Toes_JNT
+    400078: Experimental_RIG:R_Wrist_JNT
+    400080: Experimental_RIG:R_Wrist_JNT_CTRL
+    400082: Experimental_RIG:R_Wrist_JNT_CTRL_GRP
+    400084: Experimental_RIG:root_CNTRL
+    400086: Experimental_RIG:root_CNTRL_GRP
+    400088: Experimental_RIG:root_JNT
+    400090: Experimental_RIG:Upper_Body_JNT
+    400092: Experimental_RIG:Upper_Body_JNT_CTRL
+    400094: Experimental_RIG:Upper_Body_JNT_CTRL_GRP
+    400096: L_Arm_IK
+    400098: L_Elbow_PV
+    400100: L_Elbow_PV_OFFGRP
+    400102: L_Hand_GEO
+    400104: L_Hand_IK_CNTRL
+    400106: L_Hand_IK_CNTRL_OFFGRP
+    400108: R_Hand_GEO
+    400110: Skele_Head
+    400112: Skele_L_Arm
+    400114: Skele_L_Forearm
+    400116: Skele_R_Arm
+    400118: Skele_R_Forearm
+    400120: Skele_Ribs
+    400122: //RootNode
+    400124: Skeleton_GEO
     2100000: lambert1
     4300000: Skele_Head
     4300002: Skele_Ribs
@@ -104,7 +138,7 @@ ModelImporter:
     4300010: Skele_L_Arm
     4300012: L_Hand_GEO
     4300014: R_Hand_GEO
-    7400000: nothing
+    7400000: '@nothing'
     9500000: //RootNode
     13700000: L_Hand_GEO
     13700002: R_Hand_GEO
@@ -141,39 +175,11 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: nothing
-      takeName: '@nothing'
-      firstFrame: 1
-      lastFrame: 10
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.5
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -193,7 +199,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
-    previousCalculatedGlobalScale: 1.5
+    previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -366,233 +372,318 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Skeleboss_Legs@nothing(Clone)
+    - name: Skeleboss_Correct@nothing(Clone)
       parentName: 
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:CNTRLS
+      parentName: Skeleboss_Correct@nothing(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:root_CNTRL_GRP
+      parentName: Experimental_RIG:CNTRLS
+      position: {x: -0, y: 9.405301, z: 0}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+      scale: {x: 2.6985888, y: 2.6985888, z: 2.6985888}
+    - name: Experimental_RIG:root_CNTRL
+      parentName: Experimental_RIG:root_CNTRL_GRP
+      position: {x: -0, y: -1.066695e-32, z: 4.8039672e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:Upper_Body_JNT_CTRL_GRP
+      parentName: Experimental_RIG:root_CNTRL
+      position: {x: -0.26940006, y: 0.012447282, z: -2.7164249e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.69961745, y: 0.69961745, z: 0.69961745}
+    - name: Experimental_RIG:Upper_Body_JNT_CTRL
+      parentName: Experimental_RIG:Upper_Body_JNT_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.009080706, y: -0.15840265, z: -0.31103903, w: 0.9370597}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:Neck_JNT_CTRL_GRP
+      parentName: Experimental_RIG:Upper_Body_JNT_CTRL
+      position: {x: -1.8806018, y: -0.022747515, z: -2.957259e-16}
+      rotation: {x: 0, y: 0, z: 0.005180419, w: 0.9999866}
+      scale: {x: 0.9156166, y: 0.9156166, z: 0.9156166}
+    - name: Experimental_RIG:Neck_JNT_CTRL
+      parentName: Experimental_RIG:Neck_JNT_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.037151266, y: -0.23108613, z: -0.011342944, w: 0.9721576}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:R_Shoulder_JNT_CTRL_GRP
+      parentName: Experimental_RIG:Upper_Body_JNT_CTRL
+      position: {x: -1.193868, y: -0.016936492, z: -1.0254612}
+      rotation: {x: 0.473613, y: 0.5250626, z: -0.5250626, w: 0.473613}
+      scale: {x: 0.68102187, y: 0.68102187, z: 0.68102187}
+    - name: Experimental_RIG:R_Shoulder_JNT_CTRL
+      parentName: Experimental_RIG:R_Shoulder_JNT_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.29137143, y: 0.43477556, z: 0.44500405, w: 0.72666657}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:R_Elbow_JNT_CTRL_GRP
+      parentName: Experimental_RIG:R_Shoulder_JNT_CTRL
+      position: {x: 2.1348338, y: 0.000055744164, z: 8.1532e-16}
+      rotation: {x: 0, y: 0, z: 0.043619387, w: 0.99904823}
+      scale: {x: 0.7777528, y: 0.7777528, z: 0.7777528}
+    - name: Experimental_RIG:R_Elbow_JNT_CTRL
+      parentName: Experimental_RIG:R_Elbow_JNT_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 7.8982196e-17, y: 0.9348597, z: -7.8982196e-17, w: 0.35501742}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:R_Wrist_JNT_CTRL_GRP
+      parentName: Experimental_RIG:R_Elbow_JNT_CTRL
+      position: {x: 2.9364119, y: -0.00006428226, z: 2.0346136e-15}
+      rotation: {x: 0, y: 0, z: 0.026048657, w: 0.9996607}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_RIG:R_Wrist_JNT_CTRL
+      parentName: Experimental_RIG:R_Wrist_JNT_CTRL_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.36060506, w: 0.93271863}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Hand_IK_CNTRL_OFFGRP
+      parentName: Experimental_RIG:root_CNTRL
+      position: {x: -1.2948062, y: 0.0005040171, z: 2.7952724}
+      rotation: {x: 0.56723976, y: -0.4423553, z: -0.5325369, w: -0.44605526}
+      scale: {x: 0.23774008, y: 0.23774008, z: 0.23774008}
+    - name: L_Hand_IK_CNTRL
+      parentName: L_Hand_IK_CNTRL_OFFGRP
+      position: {x: 7.6225863, y: -5.720861, z: 1.7234089}
+      rotation: {x: -0.024558187, y: 0.65263665, z: 0.15272196, w: 0.74171317}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Elbow_PV_OFFGRP
+      parentName: Experimental_RIG:CNTRLS
+      position: {x: -4.74024, y: 11.9980345, z: -3.7136018}
+      rotation: {x: -0.10568305, y: 0.015501414, z: -0.019201398, w: 0.99409366}
+      scale: {x: 0.36648205, y: 0.36648205, z: 0.36648205}
+    - name: L_Elbow_PV
+      parentName: L_Elbow_PV_OFFGRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:JNTS_DONOTTOUCH
-      parentName: Skeleboss_Legs@nothing(Clone)
+      parentName: Skeleboss_Correct@nothing(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Reverse_Foot_JNT
       parentName: Experimental_RIG:JNTS_DONOTTOUCH
-      position: {x: -1.4810979, y: -0.4952006, z: -0.2977475}
+      position: {x: -0.9873986, y: -0.33013377, z: -0.19849834}
       rotation: {x: -0.0037477578, y: 0.7070969, z: -0.0037477578, w: 0.7070969}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_RV_Tip_JNT
       parentName: Experimental_RIG:L_Reverse_Foot_JNT
-      position: {x: -4.1269584, y: -4.5276283e-16, z: -1.8327377e-15}
+      position: {x: -2.7513056, y: -3.0184188e-16, z: -1.2218251e-15}
       rotation: {x: -0.04633596, y: 0.9989259, z: 4.940901e-15, w: -2.2918758e-16}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Foot_IK
       parentName: Experimental_RIG:L_RV_Tip_JNT
-      position: {x: -0.0069598295, y: 0.6035852, z: 0.0011435035}
+      position: {x: -0.0046398863, y: 0.40239012, z: 0.0007623356}
       rotation: {x: -0.0072138687, y: 0.99997395, z: -0.00001702826, w: -0.00031244004}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_RV_Ankle_JNT
       parentName: Experimental_RIG:L_RV_Tip_JNT
-      position: {x: -4.089465, y: -1.2490008e-15, z: -1.8683787e-15}
+      position: {x: -2.72631, y: -8.326672e-16, z: -1.2455858e-15}
       rotation: {x: -0.029020282, y: 0.706511, z: 0.029020282, w: 0.706511}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Ankle_IK
       parentName: Experimental_RIG:L_RV_Ankle_JNT
-      position: {x: -0.0037069938, y: 0.54405737, z: 0.026776072}
+      position: {x: -0.0024713294, y: 0.3627049, z: 0.017850714}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Reverse_Foot_JNT
       parentName: Experimental_RIG:JNTS_DONOTTOUCH
-      position: {x: 1.4863242, y: -0.49499995, z: -0.2977475}
+      position: {x: 0.9908829, y: -0.32999998, z: -0.19849834}
       rotation: {x: -0.0037477578, y: 0.7070969, z: -0.0037477578, w: 0.7070969}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_RV_Tip_JNT
       parentName: Experimental_RIG:R_Reverse_Foot_JNT
-      position: {x: -4.1269584, y: -4.5276283e-16, z: -1.8327377e-15}
+      position: {x: -2.7513056, y: -3.0184188e-16, z: -1.2218251e-15}
       rotation: {x: -0.04633596, y: 0.9989259, z: 4.940901e-15, w: -2.2918758e-16}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Foot_IK
       parentName: Experimental_RIG:R_RV_Tip_JNT
-      position: {x: -0.006963544, y: 0.6035842, z: -0.004654687}
+      position: {x: -0.0046423627, y: 0.40238947, z: -0.0031031247}
       rotation: {x: 0.9999737, y: 0.007213865, z: -0.0007524859, w: 0.000041011124}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_RV_Ankle_JNT
       parentName: Experimental_RIG:R_RV_Tip_JNT
-      position: {x: -4.089465, y: -1.2490008e-15, z: -1.8683787e-15}
+      position: {x: -2.72631, y: -8.326672e-16, z: -1.2455858e-15}
       rotation: {x: -0.029020282, y: 0.706511, z: 0.029020282, w: 0.706511}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Ankle_IK
       parentName: Experimental_RIG:R_RV_Ankle_JNT
-      position: {x: -0.0015192663, y: 0.54405725, z: 0.026775781}
+      position: {x: -0.0010128441, y: 0.36270484, z: 0.01785052}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:root_JNT
       parentName: Experimental_RIG:JNTS_DONOTTOUCH
-      position: {x: -1.9445899e-16, y: 14.107951, z: 0}
+      position: {x: -1.2963933e-16, y: 9.405301, z: 0}
       rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:Lower_Body_JNT
       parentName: Experimental_RIG:root_JNT
-      position: {x: 1.1954999, y: -3.538836e-16, z: -1.3270242e-16}
+      position: {x: 0.797, y: -2.359224e-16, z: -8.846828e-17}
       rotation: {x: 0, y: 0, z: 1, w: 6.123234e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Thigh_JNT
       parentName: Experimental_RIG:Lower_Body_JNT
-      position: {x: -1.7279999, y: 4.9339733e-16, z: 1.4848049}
+      position: {x: -1.152, y: 3.2893159e-16, z: 0.98986995}
       rotation: {x: 0.99999994, y: -3.2011947e-13, z: 0.000006396514, w: -0.00031278827}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Knee_JNT
       parentName: Experimental_RIG:L_Thigh_JNT
-      position: {x: -5.4299994, y: -9.40914e-15, z: 5.2294914e-16}
+      position: {x: -3.62, y: -6.27276e-15, z: 3.4863275e-16}
       rotation: {x: 1.1489932e-35, y: -5.622729e-30, z: 0.020632248, w: 0.99978715}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Ankle_JNT
       parentName: Experimental_RIG:L_Knee_JNT
-      position: {x: -5.3309994, y: -5.594483e-15, z: -5.13313e-16}
+      position: {x: -3.554, y: -3.7296555e-15, z: -3.4220864e-16}
       rotation: {x: 7.9534387e-16, y: -7.746118e-16, z: -0.69770825, w: 0.716382}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Toes_JNT
       parentName: Experimental_RIG:L_Ankle_JNT
-      position: {x: -4.100867, y: 2.7061686e-16, z: 8.3266716e-16}
+      position: {x: -2.7339113, y: 1.8041124e-16, z: 5.5511146e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Thigh_JNT
       parentName: Experimental_RIG:Lower_Body_JNT
-      position: {x: -1.7280018, y: 4.88278e-16, z: -1.4848049}
+      position: {x: -1.1520013, y: 3.2551868e-16, z: -0.98986995}
       rotation: {x: -0.00044622464, y: 0.99999964, z: 0.00075341534, w: 0.000015775939}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Knee_JNT
       parentName: Experimental_RIG:R_Thigh_JNT
-      position: {x: 5.4299994, y: 9.409143e-15, z: 9.992007e-16}
+      position: {x: 3.62, y: 6.2727626e-15, z: 6.661338e-16}
       rotation: {x: -1.5387616e-19, y: 6.0746045e-19, z: 0.021533236, w: 0.99976814}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Ankle_JNT
       parentName: Experimental_RIG:R_Knee_JNT
-      position: {x: 5.3309975, y: 0.00000036306434, z: 8.3266716e-16}
+      position: {x: 3.5539985, y: 0.00000024204292, z: 5.5511146e-16}
       rotation: {x: -4.811049e-10, y: -5.5995198e-11, z: -0.69803375, w: 0.7160649}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Toes_JNT
       parentName: Experimental_RIG:R_Ankle_JNT
-      position: {x: 4.100867, y: 0.00000061949225, z: 1.831868e-15}
+      position: {x: 2.7339113, y: 0.00000041299484, z: 1.2212453e-15}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:Upper_Body_JNT
       parentName: Experimental_RIG:root_JNT
-      position: {x: -1.0905, y: 0.050385144, z: 1.154003e-16}
+      position: {x: -0.727, y: 0.033590097, z: 7.693353e-17}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
     - name: Experimental_RIG:Clavicle_JNT
       parentName: Experimental_RIG:Upper_Body_JNT
-      position: {x: -3.6269996, y: -1.2906343e-15, z: 3.5938412e-16}
+      position: {x: -2.418, y: -8.6042284e-16, z: 2.395894e-16}
       rotation: {x: 0, y: 0, z: 0.018950224, w: 0.9998204}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Shoulder_Shrug_JNT
       parentName: Experimental_RIG:Clavicle_JNT
-      position: {x: 0.20515257, y: -0.055777665, z: 0.8801227}
+      position: {x: 0.13676839, y: -0.03718511, z: 0.58674854}
       rotation: {x: -0.5862181, y: 0.3954091, z: 0.49119765, w: 0.50865006}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:L_Shoulder_JNT
       parentName: Experimental_RIG:L_Shoulder_Shrug_JNT
-      position: {x: -2.0149345, y: 0, z: -9.653948e-16}
+      position: {x: -1.3432899, y: 0, z: -6.4359654e-16}
       rotation: {x: -0.000000059604645, y: -0, z: 0.08715573, w: 0.9961947}
       scale: {x: 1.0000006, y: 1, z: 1.0000004}
     - name: Experimental_RIG:L_Elbow_JNT
       parentName: Experimental_RIG:L_Shoulder_JNT
-      position: {x: -4.0671234, y: 0, z: 6.1690394e-16}
+      position: {x: -2.7114155, y: 0, z: 4.1126928e-16}
       rotation: {x: -0.5425744, y: -0.00053647155, z: -0.0035741203, w: 0.8399999}
       scale: {x: 1.0000004, y: 1.0000005, z: 1}
     - name: Experimental_RIG:L_Wrist_JNT
       parentName: Experimental_RIG:L_Elbow_JNT
-      position: {x: -4.4046288, y: 2.8609927e-15, z: 8.326673e-17}
+      position: {x: -2.936419, y: 1.9073285e-15, z: 5.551115e-17}
       rotation: {x: 0.31855044, y: 0.014139083, z: -0.13320634, w: 0.93839324}
       scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
     - name: Experimental_RIG:L_Fingers_JNT
       parentName: Experimental_RIG:L_Wrist_JNT
-      position: {x: -1.721367, y: 1.0096091e-15, z: 3.3827108e-17}
+      position: {x: -1.1475781, y: 6.730727e-16, z: 2.2551405e-17}
       rotation: {x: 0, y: -0, z: -0.026048657, w: 0.9996607}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Shoulder_Shrug_JNT
       parentName: Experimental_RIG:Clavicle_JNT
-      position: {x: 0.20518556, y: -0.055778928, z: -0.8801235}
+      position: {x: 0.13679038, y: -0.037185952, z: -0.586749}
       rotation: {x: 0.5140768, y: 0.48551518, z: -0.5046467, w: 0.49530968}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:R_Shoulder_JNT
       parentName: Experimental_RIG:R_Shoulder_Shrug_JNT
-      position: {x: 2.024324, y: -0.00007213089, z: 6.3620983e-16}
+      position: {x: 1.3495494, y: -0.00004808726, z: 4.241399e-16}
       rotation: {x: -0.31633613, y: 0.0021715465, z: -0.040535364, w: 0.9477783}
       scale: {x: 1.0000001, y: 1.0000007, z: 1.0000012}
     - name: Experimental_RIG:R_Elbow_JNT
       parentName: Experimental_RIG:R_Shoulder_JNT
-      position: {x: 4.1173115, y: 0.00010751004, z: -8.551102e-16}
+      position: {x: 2.7448742, y: 0.00007167336, z: -5.700735e-16}
       rotation: {x: 0.31568053, y: 0.0092945965, z: 0.06735044, w: 0.9464267}
       scale: {x: 1.0000007, y: 1.0000004, z: 1.0000001}
     - name: Experimental_RIG:R_Wrist_JNT
       parentName: Experimental_RIG:R_Elbow_JNT
-      position: {x: 4.404618, y: -0.00009642339, z: 4.7130263e-16}
+      position: {x: 2.9364119, y: -0.00006428226, z: 3.142018e-16}
       rotation: {x: -0.000000029802322, y: -0.000000027939677, z: 0.026048733, w: 0.99966073}
       scale: {x: 1, y: 1.0000008, z: 1.0000007}
     - name: Experimental_RIG:R_Fingers_JNT
       parentName: Experimental_RIG:R_Wrist_JNT
-      position: {x: 1.7213722, y: 0.000012848955, z: 5.083824e-16}
+      position: {x: 1.1475816, y: 0.00000856597, z: 3.389216e-16}
       rotation: {x: 0, y: -0, z: -0.026048657, w: 0.9996607}
       scale: {x: 1, y: 1, z: 1}
     - name: Experimental_RIG:Neck_JNT
       parentName: Experimental_RIG:Clavicle_JNT
-      position: {x: -1.7000284, y: -1.0304256e-15, z: 7.152087e-18}
+      position: {x: -1.1333523, y: -6.8695044e-16, z: 4.768058e-18}
       rotation: {x: -0, y: -0, z: -0.013770512, w: 0.9999052}
       scale: {x: 1.0000008, y: 1.0000007, z: 1.0000008}
     - name: Experimental_RIG:Head_Tip_JNT
       parentName: Experimental_RIG:Neck_JNT
-      position: {x: -5.7109466, y: 2.0847903e-14, z: 6.5691227e-18}
+      position: {x: -3.8072977, y: 1.3898604e-14, z: 4.379415e-18}
       rotation: {x: 0, y: -0, z: -0.005180419, w: 0.9999866}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Arm_IK
       parentName: Experimental_RIG:JNTS_DONOTTOUCH
-      position: {x: -4.1226106, y: 14.014196, z: 2.586467}
+      position: {x: -2.7484071, y: 9.342798, z: 1.7243114}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Skeleton
-      parentName: Skeleboss_Legs@nothing(Clone)
+    - name: Skeleton_GEO
+      parentName: Skeleboss_Correct@nothing(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Hand_GEO
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Hand_GEO
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Skele_Head
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Skele_L_Arm
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Skele_L_Forearm
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Skele_R_Arm
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Skele_R_Forearm
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Skele_Ribs
-      parentName: Skeleton
+      parentName: Skeleton_GEO
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -606,7 +697,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3

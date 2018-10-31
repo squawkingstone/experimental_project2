@@ -2146,8 +2146,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  godMode: 0
   text: {fileID: 0}
   playOnHurt: {fileID: 0}
+  playOnDeath: {fileID: 0}
 --- !u!114 &114463264263157780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2186,6 +2188,8 @@ MonoBehaviour:
   angularTarget: 0.05
   maxWalkAngle: 50
   jumpHeight: 1
+  clinkTime: 1
+  clinkSound: {fileID: 8300000, guid: bec1f0ea1a140b146bbc24d1137c8409, type: 3}
 --- !u!114 &114944072385992182
 MonoBehaviour:
   m_ObjectHideFlags: 1
