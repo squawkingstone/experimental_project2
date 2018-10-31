@@ -73,7 +73,7 @@ public class PlayerControl : MonoBehaviour
         if(Time.time - lastClink > clinkTime)
         {
             lastClink = Time.time;
-            if(rb.velocity.sqrMagnitude > 0.05 && grounded)
+            if(rb.velocity.sqrMagnitude > 0.05 && grounded && !source.isPlaying)
             {
                 source.clip = clinkSound;
                 source.Play();

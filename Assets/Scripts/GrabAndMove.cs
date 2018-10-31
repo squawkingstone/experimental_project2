@@ -29,9 +29,10 @@ public class GrabAndMove : MonoBehaviour
     private float triggerTime;
     private PlayerControl target;
     private int cycles;
-    bool movingPlayer;
-    TextScroll textScroll;
-    TriggerGrab tg;
+    private bool movingPlayer;
+    private TextScroll textScroll;
+    private TriggerGrab tg;
+    private PlaySoundOnLoad psol;
 
     void Awake()
     {
@@ -41,6 +42,7 @@ public class GrabAndMove : MonoBehaviour
         movingPlayer = false;
         textScroll = FindObjectOfType<TextScroll>();
         tg = GetComponent<TriggerGrab>();
+        psol = FindObjectOfType<PlaySoundOnLoad>();
     }
 
     void Update()
@@ -63,6 +65,7 @@ public class GrabAndMove : MonoBehaviour
                 audioSource.loop = false;
                 audioSource.clip = pickupClip;
                 audioSource.Play();
+                psol.PlaySound();
                 movingPlayer = true;
             }
             break;
