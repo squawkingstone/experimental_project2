@@ -18,4 +18,9 @@ public class PlayerAnim : MonoBehaviour {
 			anim.SetBool("IsRunning", false);
 		}
 	}
+
+    public void SetGrabbed(bool value)
+    {
+        anim.SetBool("Grabbed", value);
+    }
 }

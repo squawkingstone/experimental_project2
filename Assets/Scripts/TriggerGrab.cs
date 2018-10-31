@@ -27,4 +27,9 @@ public class TriggerGrab : MonoBehaviour {
 
         trigger.enabled = false;
     }
+
+    public void Reset()
+    {
+        trigger.enabled = true;
+    }
 }

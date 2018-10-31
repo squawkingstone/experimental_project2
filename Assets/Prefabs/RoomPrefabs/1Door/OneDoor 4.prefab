@@ -1208,7 +1208,6 @@ GameObject:
   - component: {fileID: 33231858985483336}
   - component: {fileID: 23192832348909770}
   - component: {fileID: 65414095019076868}
-  - component: {fileID: 114518196767784136}
   m_Layer: 0
   m_Name: Chest_Top
   m_TagString: Untagged
@@ -1483,7 +1482,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1844538981869700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.23941, y: 52.033195, z: 108.85284}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4928791547089300}
@@ -4568,25 +4567,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114518196767784136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1817008570141668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a56b2452802e04bae48a6591c03b2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openTime: 0.5
-  turn: 90
-  activeColor: {r: 1, g: 1, b: 0, a: 0}
-  rewardText:
-  - You found a sword!
-  - It is the same as the one you laready have.
-  instantiate: {fileID: 1645136270267612, guid: 97b1c9b51f4f30f488ccfad5fc80539a,
-    type: 2}
 --- !u!198 &198231110527297924
 ParticleSystem:
   m_ObjectHideFlags: 1
