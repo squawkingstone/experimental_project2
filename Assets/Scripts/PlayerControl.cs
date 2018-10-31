@@ -40,6 +40,7 @@ public class PlayerControl : MonoBehaviour
     private AudioSource source;
     private bool lastAttackPressed;
     private bool grounded;
+    private PlayerAnim playerAnim;
 
     public bool actionDown{get; private set;}
     public bool attackDown{get; private set;}
@@ -189,8 +190,10 @@ public class PlayerControl : MonoBehaviour
     {
         canMove = value;
         rb.useGravity = value;
+        playerAnim.SetGrabbed(value);
         if(!value)
         {
+            
             rb.velocity = Vector3.zero;
         }
     }
