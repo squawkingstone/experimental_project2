@@ -31,6 +31,7 @@ public class GrabAndMove : MonoBehaviour
     private int cycles;
     bool movingPlayer;
     TextScroll textScroll;
+    TriggerGrab tg;
 
     void Awake()
     {
@@ -39,6 +40,7 @@ public class GrabAndMove : MonoBehaviour
         cycles = maxCycles;
         movingPlayer = false;
         textScroll = FindObjectOfType<TextScroll>();
+        tg = GetComponent<TriggerGrab>();
     }
 
     void Update()
@@ -135,6 +137,7 @@ public class GrabAndMove : MonoBehaviour
             {
                 state = -1;
                 cycles = maxCycles;
+                tg.Reset();
             }
             break;
         default:

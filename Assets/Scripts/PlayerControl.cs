@@ -22,6 +22,10 @@ public class PlayerControl : MonoBehaviour
     [SerializeField][Range(0, 90)] private float maxWalkAngle;
     [SerializeField] private float jumpHeight;
 
+    [Header("Sound Properties")]
+    [SerializeField] float clinkTime;
+    [SerializeField] AudioClip clinkSound;
+
     private Rigidbody rb;
     private bool canMove;
     private Vector3 groundedNormal;
@@ -31,8 +35,11 @@ public class PlayerControl : MonoBehaviour
     private int frameCounter = 0;
     private float jumpForce;
     private bool jump = false;
-    PlayerTrackerCam cam;
+    private PlayerTrackerCam cam;
+    private float lastClink;
+    private AudioSource source;
     private bool lastAttackPressed;
+    private bool grounded;
 
     public bool actionDown{get; private set;}
     public bool attackDown{get; private set;}
@@ -48,6 +55,8 @@ public class PlayerControl : MonoBehaviour
         cameraForwardRotation = Quaternion.identity;
         cam = FindObjectOfType<PlayerTrackerCam>();
         canMove = true;
+        source = GetComponent<AudioSource>();
+        lastClink = Time.time;
     }
 
     void Update()
@@ -59,6 +68,16 @@ public class PlayerControl : MonoBehaviour
         bool attack = Input.GetAxisRaw(attackAxis) > 0.5f;
         attackDown = attack && !lastAttackPressed;
         lastAttackPressed = attack;
+        if(Time.time - lastClink > clinkTime)
+        {
+            lastClink = Time.time;
+            if(rb.velocity.sqrMagnitude > 0.05 && grounded)
+            {
+                source.clip = clinkSound;
+                source.Play();
+            }
+        }
+
         ++frameCounter;
     }
 
@@ -66,7 +85,7 @@ public class PlayerControl : MonoBehaviour
     {
         Vector3 movementNormal = Vector3.up;
         Vector3 vel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-        bool grounded = false;
+        grounded = false;
 
         if(groundedNormal.sqrMagnitude > 0)
         {

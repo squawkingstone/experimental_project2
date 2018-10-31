@@ -2212,8 +2212,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1744726099798682}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.37, z: -7.347753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4764480745148810}
@@ -2900,8 +2900,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  godMode: 0
   text: {fileID: 0}
   playOnHurt: {fileID: 0}
+  playOnDeath: {fileID: 0}
 --- !u!114 &114463264263157780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2940,6 +2942,8 @@ MonoBehaviour:
   angularTarget: 0.05
   maxWalkAngle: 50
   jumpHeight: 1
+  clinkTime: 1
+  clinkSound: {fileID: 8300000, guid: bec1f0ea1a140b146bbc24d1137c8409, type: 3}
 --- !u!114 &114944072385992182
 MonoBehaviour:
   m_ObjectHideFlags: 1
