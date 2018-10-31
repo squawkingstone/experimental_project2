@@ -33,7 +33,10 @@ public class OpenWindow : MonoBehaviour {
             }
 
 		if (m_Window.activeInHierarchy && Vector3.Distance(player.transform.position, transform.position) > m_DistanceToPlayer)
+		{	
 			m_Window.SetActive(false);
+		}
+
 	}
 
 }

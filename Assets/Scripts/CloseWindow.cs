@@ -12,7 +12,9 @@ public class CloseWindow : MonoBehaviour {
 	void Start()
 	{ 
 		button = GetComponent<Button>(); 
-		button.onClick.AddListener(() => {m_Window.SetActive(false);});
+		button.onClick.AddListener(() => { 
+			m_Window.SetActive(false);
+		});
 	}
 
 }

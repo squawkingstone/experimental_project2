@@ -31,7 +31,6 @@ public class DungeonNarration : MonoBehaviour
 			}
 		}
 		m_Timer += Time.deltaTime;
-		Debug.Log(m_Timer);
 	}
 
 	public void PlayFightClip()

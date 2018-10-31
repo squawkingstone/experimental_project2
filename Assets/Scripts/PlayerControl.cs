@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -59,6 +60,7 @@ public class PlayerControl : MonoBehaviour
         source = GetComponent<AudioSource>();
         lastClink = Time.time;
         playerAnim = GetComponent<PlayerAnim>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
@@ -185,6 +187,7 @@ public class PlayerControl : MonoBehaviour
         {
             g.SendMessage("DropTarget", SendMessageOptions.DontRequireReceiver);
         }
+        SceneManager.LoadScene("Town");
     }
 
     public void setCanMove(bool value)
