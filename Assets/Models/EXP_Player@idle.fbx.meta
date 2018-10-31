@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: c4b9b36c5b1da404ba522c142bcfb29e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Experimental_Player_SKIN:Breast_Plate_GEO
+    100004: Experimental_Player_SKIN:Character_GEO
+    100006: Experimental_Player_SKIN:Clavicle_JNT
+    100008: Experimental_Player_SKIN:Head_Tip_JNT
+    100010: Experimental_Player_SKIN:Helmet_GEO
+    100012: Experimental_Player_SKIN:JNTS_DONOTTOUCH
+    100014: Experimental_Player_SKIN:L_Ankle_IK
+    100016: Experimental_Player_SKIN:L_Ankle_JNT
+    100018: Experimental_Player_SKIN:L_Elbow_JNT
+    100020: Experimental_Player_SKIN:L_Fingers_JNT
+    100022: Experimental_Player_SKIN:L_Foot_IK
+    100024: Experimental_Player_SKIN:L_Knee_Cap_GEO
+    100026: Experimental_Player_SKIN:L_Knee_JNT
+    100028: Experimental_Player_SKIN:L_Reverse_Foot_JNT
+    100030: Experimental_Player_SKIN:L_RV_Ankle_JNT
+    100032: Experimental_Player_SKIN:L_RV_Tip_JNT
+    100034: Experimental_Player_SKIN:L_Shoulder_JNT
+    100036: Experimental_Player_SKIN:L_Shoulder_Pad_GEO
+    100038: Experimental_Player_SKIN:L_Shoulder_Shrug_JNT
+    100040: Experimental_Player_SKIN:L_Thigh_JNT
+    100042: Experimental_Player_SKIN:L_Toes_JNT
+    100044: Experimental_Player_SKIN:L_Wrist_JNT
+    100046: Experimental_Player_SKIN:Lower_Body_JNT
+    100048: Experimental_Player_SKIN:Main_Character_GEO
+    100050: Experimental_Player_SKIN:Neck_JNT
+    100052: Experimental_Player_SKIN:R_Ankle_IK
+    100054: Experimental_Player_SKIN:R_Ankle_JNT
+    100056: Experimental_Player_SKIN:R_Elbow_JNT
+    100058: Experimental_Player_SKIN:R_Fingers_JNT
+    100060: Experimental_Player_SKIN:R_Foot_IK
+    100062: Experimental_Player_SKIN:R_Knee_Cap_GEO
+    100064: Experimental_Player_SKIN:R_Knee_JNT
+    100066: Experimental_Player_SKIN:R_Reverse_Foot_JNT
+    100068: Experimental_Player_SKIN:R_RV_Ankle_JNT
+    100070: Experimental_Player_SKIN:R_RV_Tip_JNT
+    100072: Experimental_Player_SKIN:R_Shoulder_JNT
+    100074: Experimental_Player_SKIN:R_Shoulder_Pad_GEO
+    100076: Experimental_Player_SKIN:R_Shoulder_Shrug_JNT
+    100078: Experimental_Player_SKIN:R_Thigh_JNT
+    100080: Experimental_Player_SKIN:R_Toes_JNT
+    100082: Experimental_Player_SKIN:R_Wrist_JNT
+    100084: Experimental_Player_SKIN:root_JNT
+    100086: Experimental_Player_SKIN:Upper_Body_JNT
+    400000: //RootNode
+    400002: Experimental_Player_SKIN:Breast_Plate_GEO
+    400004: Experimental_Player_SKIN:Character_GEO
+    400006: Experimental_Player_SKIN:Clavicle_JNT
+    400008: Experimental_Player_SKIN:Head_Tip_JNT
+    400010: Experimental_Player_SKIN:Helmet_GEO
+    400012: Experimental_Player_SKIN:JNTS_DONOTTOUCH
+    400014: Experimental_Player_SKIN:L_Ankle_IK
+    400016: Experimental_Player_SKIN:L_Ankle_JNT
+    400018: Experimental_Player_SKIN:L_Elbow_JNT
+    400020: Experimental_Player_SKIN:L_Fingers_JNT
+    400022: Experimental_Player_SKIN:L_Foot_IK
+    400024: Experimental_Player_SKIN:L_Knee_Cap_GEO
+    400026: Experimental_Player_SKIN:L_Knee_JNT
+    400028: Experimental_Player_SKIN:L_Reverse_Foot_JNT
+    400030: Experimental_Player_SKIN:L_RV_Ankle_JNT
+    400032: Experimental_Player_SKIN:L_RV_Tip_JNT
+    400034: Experimental_Player_SKIN:L_Shoulder_JNT
+    400036: Experimental_Player_SKIN:L_Shoulder_Pad_GEO
+    400038: Experimental_Player_SKIN:L_Shoulder_Shrug_JNT
+    400040: Experimental_Player_SKIN:L_Thigh_JNT
+    400042: Experimental_Player_SKIN:L_Toes_JNT
+    400044: Experimental_Player_SKIN:L_Wrist_JNT
+    400046: Experimental_Player_SKIN:Lower_Body_JNT
+    400048: Experimental_Player_SKIN:Main_Character_GEO
+    400050: Experimental_Player_SKIN:Neck_JNT
+    400052: Experimental_Player_SKIN:R_Ankle_IK
+    400054: Experimental_Player_SKIN:R_Ankle_JNT
+    400056: Experimental_Player_SKIN:R_Elbow_JNT
+    400058: Experimental_Player_SKIN:R_Fingers_JNT
+    400060: Experimental_Player_SKIN:R_Foot_IK
+    400062: Experimental_Player_SKIN:R_Knee_Cap_GEO
+    400064: Experimental_Player_SKIN:R_Knee_JNT
+    400066: Experimental_Player_SKIN:R_Reverse_Foot_JNT
+    400068: Experimental_Player_SKIN:R_RV_Ankle_JNT
+    400070: Experimental_Player_SKIN:R_RV_Tip_JNT
+    400072: Experimental_Player_SKIN:R_Shoulder_JNT
+    400074: Experimental_Player_SKIN:R_Shoulder_Pad_GEO
+    400076: Experimental_Player_SKIN:R_Shoulder_Shrug_JNT
+    400078: Experimental_Player_SKIN:R_Thigh_JNT
+    400080: Experimental_Player_SKIN:R_Toes_JNT
+    400082: Experimental_Player_SKIN:R_Wrist_JNT
+    400084: Experimental_Player_SKIN:root_JNT
+    400086: Experimental_Player_SKIN:Upper_Body_JNT
+    2100000: Experimental_Player_SKIN_Head_TEX
+    2100002: Experimental_Player_SKIN_Shoulder_Pad_TEX
+    2100004: Experimental_Player_SKIN_BreastPlate_TEX
+    2100006: Experimental_Player_SKIN_Knee_Pad_TEX
+    2100008: Experimental_Player_SKIN_Body_TEX
+    2300000: Experimental_Player_SKIN:L_Knee_Cap_GEO
+    2300002: Experimental_Player_SKIN:L_Shoulder_Pad_GEO
+    2300004: Experimental_Player_SKIN:R_Knee_Cap_GEO
+    2300006: Experimental_Player_SKIN:R_Shoulder_Pad_GEO
+    3300000: Experimental_Player_SKIN:L_Knee_Cap_GEO
+    3300002: Experimental_Player_SKIN:L_Shoulder_Pad_GEO
+    3300004: Experimental_Player_SKIN:R_Knee_Cap_GEO
+    3300006: Experimental_Player_SKIN:R_Shoulder_Pad_GEO
+    4300000: Experimental_Player_SKIN:Helmet_GEO
+    4300002: Experimental_Player_SKIN:R_Shoulder_Pad_GEO
+    4300004: Experimental_Player_SKIN:Breast_Plate_GEO
+    4300006: Experimental_Player_SKIN:R_Knee_Cap_GEO
+    4300008: Experimental_Player_SKIN:L_Knee_Cap_GEO
+    4300010: Experimental_Player_SKIN:L_Shoulder_Pad_GEO
+    4300012: Experimental_Player_SKIN:Character_GEO
+    7400000: idle
+    7400002: grabbed
+    9500000: //RootNode
+    13700000: Experimental_Player_SKIN:Breast_Plate_GEO
+    13700002: Experimental_Player_SKIN:Character_GEO
+    13700004: Experimental_Player_SKIN:Helmet_GEO
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: '@idle'
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: grabbed
+      takeName: '@idle'
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.15
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Experimental_Player_SKIN:root_JNT
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Thigh_JNT
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Thigh_JNT
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Knee_JNT
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Knee_JNT
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Ankle_JNT
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Ankle_JNT
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:Upper_Body_JNT
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:Neck_JNT
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Shoulder_Shrug_JNT
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Shoulder_Shrug_JNT
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Shoulder_JNT
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Shoulder_JNT
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Elbow_JNT
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Elbow_JNT
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Wrist_JNT
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Wrist_JNT
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:L_Toes_JNT
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:R_Toes_JNT
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Experimental_Player_SKIN:Head_Tip_JNT
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: EXP_Player@idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:JNTS_DONOTTOUCH
+      parentName: EXP_Player@idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_Reverse_Foot_JNT
+      parentName: Experimental_Player_SKIN:JNTS_DONOTTOUCH
+      position: {x: -0.27562994, y: -0.049520068, z: -0.3227435}
+      rotation: {x: -0.0027017836, y: 0.50976235, z: -0.0045596696, w: 0.86029893}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_RV_Tip_JNT
+      parentName: Experimental_Player_SKIN:L_Reverse_Foot_JNT
+      position: {x: -0.41269585, y: -4.527629e-17, z: -1.8327378e-16}
+      rotation: {x: -0.04633596, y: 0.9989259, z: 4.940901e-15, w: -2.2918758e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_Foot_IK
+      parentName: Experimental_Player_SKIN:L_RV_Tip_JNT
+      position: {x: -0.000695983, y: 0.06035852, z: 0.00011435035}
+      rotation: {x: -0.0072138687, y: 0.99997395, z: -0.00001702826, w: -0.00031244004}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_RV_Ankle_JNT
+      parentName: Experimental_Player_SKIN:L_RV_Tip_JNT
+      position: {x: -0.40894654, y: -1.2490009e-16, z: -1.8683789e-16}
+      rotation: {x: -0.029020282, y: 0.706511, z: 0.029020282, w: 0.706511}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_Ankle_IK
+      parentName: Experimental_Player_SKIN:L_RV_Ankle_JNT
+      position: {x: -0.00037069942, y: 0.054405738, z: 0.0026776071}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:R_Reverse_Foot_JNT
+      parentName: Experimental_Player_SKIN:JNTS_DONOTTOUCH
+      position: {x: 0.23939043, y: -0.049500003, z: 0.18387409}
+      rotation: {x: -0.0040764404, y: 0.76911926, z: -0.0033873282, w: 0.63908327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:R_RV_Tip_JNT
+      parentName: Experimental_Player_SKIN:R_Reverse_Foot_JNT
+      position: {x: -0.41269585, y: -4.527629e-17, z: -1.8327378e-16}
+      rotation: {x: -0.04633596, y: 0.9989259, z: 4.940901e-15, w: -2.2918758e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:R_Foot_IK
+      parentName: Experimental_Player_SKIN:R_RV_Tip_JNT
+      position: {x: -0.0006963545, y: 0.060358424, z: -0.00046546877}
+      rotation: {x: 0.9999737, y: 0.007213865, z: -0.0007524859, w: 0.000041011124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:R_RV_Ankle_JNT
+      parentName: Experimental_Player_SKIN:R_RV_Tip_JNT
+      position: {x: -0.40894654, y: -1.2490009e-16, z: -1.8683789e-16}
+      rotation: {x: -0.029020282, y: 0.706511, z: 0.029020282, w: 0.706511}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:R_Ankle_IK
+      parentName: Experimental_Player_SKIN:R_RV_Ankle_JNT
+      position: {x: -0.00015192662, y: 0.05440573, z: 0.0026775785}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:root_JNT
+      parentName: Experimental_Player_SKIN:JNTS_DONOTTOUCH
+      position: {x: 2.58845e-32, y: 1.4288309, z: -0.00250999}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000007}
+    - name: Experimental_Player_SKIN:Lower_Body_JNT
+      parentName: Experimental_Player_SKIN:root_JNT
+      position: {x: 0.119550005, y: -3.538836e-17, z: -1.3270243e-17}
+      rotation: {x: -0, y: -0, z: 1, w: 0}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Experimental_Player_SKIN:L_Thigh_JNT
+      parentName: Experimental_Player_SKIN:Lower_Body_JNT
+      position: {x: -0.1728, y: 4.9339742e-17, z: 0.1484805}
+      rotation: {x: 0.99999994, y: 0.000000014901161, z: 0.0000064074993, w: -0.00031284988}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Experimental_Player_SKIN:L_Knee_JNT
+      parentName: Experimental_Player_SKIN:L_Thigh_JNT
+      position: {x: -0.543, y: -9.409141e-16, z: 5.2294917e-17}
+      rotation: {x: -0.00000002089655, y: -0.000000055659598, z: 0.020632207, w: 0.99978715}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Experimental_Player_SKIN:L_Ankle_JNT
+      parentName: Experimental_Player_SKIN:L_Knee_JNT
+      position: {x: -0.5331, y: -5.5944843e-16, z: -5.1331302e-17}
+      rotation: {x: 0.000000009823175, y: 0.000000097217296, z: -0.69770825, w: 0.716382}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000001}
+    - name: Experimental_Player_SKIN:L_Toes_JNT
+      parentName: Experimental_Player_SKIN:L_Ankle_JNT
+      position: {x: -0.4100867, y: 2.7061687e-17, z: 8.326673e-17}
+      rotation: {x: -0, y: -0, z: -9.549825e-16, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
+    - name: Experimental_Player_SKIN:R_Thigh_JNT
+      parentName: Experimental_Player_SKIN:Lower_Body_JNT
+      position: {x: -0.1728002, y: 4.8827803e-17, z: -0.1484805}
+      rotation: {x: -0, y: -0.99999976, z: -0.0007534027, w: -0.000015377998}
+      scale: {x: 1.000001, y: 1.0000007, z: 1.0000006}
+    - name: Experimental_Player_SKIN:R_Knee_JNT
+      parentName: Experimental_Player_SKIN:R_Thigh_JNT
+      position: {x: 0.543, y: 9.409145e-16, z: 9.9920076e-17}
+      rotation: {x: 0.00000002195219, y: 0.00000005043151, z: -0.020632213, w: -0.9997872}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: Experimental_Player_SKIN:R_Ankle_JNT
+      parentName: Experimental_Player_SKIN:R_Knee_JNT
+      position: {x: 0.53309983, y: 0.00000003630644, z: 8.326673e-17}
+      rotation: {x: 0.00000003338212, y: 0.0000000036305101, z: 0.69770825, w: -0.71638197}
+      scale: {x: 1.0000006, y: 1.0000023, z: 1.0000004}
+    - name: Experimental_Player_SKIN:R_Toes_JNT
+      parentName: Experimental_Player_SKIN:R_Ankle_JNT
+      position: {x: 0.41008672, y: 0.00000006194923, z: 1.8318681e-16}
+      rotation: {x: -0, y: -0, z: -1.2119412e-16, w: 1}
+      scale: {x: 1.0000005, y: 1.0000013, z: 1.0000002}
+    - name: Experimental_Player_SKIN:Upper_Body_JNT
+      parentName: Experimental_Player_SKIN:root_JNT
+      position: {x: -0.109050006, y: 0.0050385147, z: 1.1540031e-17}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000005}
+    - name: Experimental_Player_SKIN:Clavicle_JNT
+      parentName: Experimental_Player_SKIN:Upper_Body_JNT
+      position: {x: -0.36270002, y: -1.2906343e-16, z: 3.5938414e-17}
+      rotation: {x: -0.000000059604645, y: -0, z: 0.018950194, w: 0.9998205}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000008}
+    - name: Experimental_Player_SKIN:Neck_JNT
+      parentName: Experimental_Player_SKIN:Clavicle_JNT
+      position: {x: -0.17000285, y: -1.0304258e-16, z: 7.1520874e-19}
+      rotation: {x: 0.000000059603842, y: -3.087752e-10, z: -0.01377048, w: 0.99990517}
+      scale: {x: 1.000002, y: 1.0000021, z: 1.000002}
+    - name: Experimental_Player_SKIN:Head_Tip_JNT
+      parentName: Experimental_Player_SKIN:Neck_JNT
+      position: {x: -0.5710947, y: 2.0847908e-15, z: 6.569123e-19}
+      rotation: {x: -0, y: -5.551115e-17, z: -0.0051803896, w: 0.9999866}
+      scale: {x: 0.9999996, y: 0.99999964, z: 0.9999996}
+    - name: Experimental_Player_SKIN:L_Shoulder_Shrug_JNT
+      parentName: Experimental_Player_SKIN:Clavicle_JNT
+      position: {x: 0.02051526, y: -0.005577767, z: 0.088012286}
+      rotation: {x: -0.48551515, y: 0.5140768, z: 0.49530974, w: 0.5046467}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000004}
+    - name: Experimental_Player_SKIN:L_Shoulder_JNT
+      parentName: Experimental_Player_SKIN:L_Shoulder_Shrug_JNT
+      position: {x: -0.20243262, y: 0, z: 1.3631757e-16}
+      rotation: {x: -0, y: 0.000000059604638, z: -0.0506543, w: 0.99871624}
+      scale: {x: 0.9999994, y: 1.0000007, z: 1}
+    - name: Experimental_Player_SKIN:L_Elbow_JNT
+      parentName: Experimental_Player_SKIN:L_Shoulder_JNT
+      position: {x: -0.4117317, y: 0, z: -1.7116668e-16}
+      rotation: {x: 0.0000000031186573, y: -0.000000029695688, z: 0.04361941, w: 0.99904823}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: Experimental_Player_SKIN:L_Wrist_JNT
+      parentName: Experimental_Player_SKIN:L_Elbow_JNT
+      position: {x: -0.4404629, y: 2.8609927e-16, z: 8.326673e-18}
+      rotation: {x: -0.000000015426648, y: 0.000000118937926, z: 0.02604868, w: 0.9996607}
+      scale: {x: 0.9999996, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_Fingers_JNT
+      parentName: Experimental_Player_SKIN:L_Wrist_JNT
+      position: {x: -0.17213672, y: 1.0096091e-16, z: 3.3827109e-18}
+      rotation: {x: 0.000000015426648, y: -0.000000118937926, z: -0.02604868, w: 0.9996607}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Experimental_Player_SKIN:R_Shoulder_Shrug_JNT
+      parentName: Experimental_Player_SKIN:Clavicle_JNT
+      position: {x: 0.020518558, y: -0.0055778935, z: -0.08801237}
+      rotation: {x: 0.5140769, y: 0.4855152, z: -0.50464666, w: 0.49530965}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000001}
+    - name: Experimental_Player_SKIN:R_Shoulder_JNT
+      parentName: Experimental_Player_SKIN:R_Shoulder_Shrug_JNT
+      position: {x: 0.20243244, y: -0.0000072130892, z: 6.362099e-17}
+      rotation: {x: -0.00000004470348, y: -0.000000014901159, z: -0.050668173, w: 0.9987155}
+      scale: {x: 0.9999989, y: 1.0000011, z: 1.0000005}
+    - name: Experimental_Player_SKIN:R_Elbow_JNT
+      parentName: Experimental_Player_SKIN:R_Shoulder_JNT
+      position: {x: 0.41173115, y: 0.000010751006, z: -8.5511027e-17}
+      rotation: {x: -0.00000002210703, y: -0.00000013830376, z: 0.043619413, w: 0.99904823}
+      scale: {x: 1.0000002, y: 1.0000005, z: 0.99999964}
+    - name: Experimental_Player_SKIN:R_Wrist_JNT
+      parentName: Experimental_Player_SKIN:R_Elbow_JNT
+      position: {x: 0.44046184, y: -0.00000964234, z: 4.713027e-17}
+      rotation: {x: 0.00000012100662, y: 0.0000000742596, z: 0.026048638, w: 0.99966073}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000005}
+    - name: Experimental_Player_SKIN:R_Fingers_JNT
+      parentName: Experimental_Player_SKIN:R_Wrist_JNT
+      position: {x: 0.17213725, y: 0.0000012848956, z: 5.0838243e-17}
+      rotation: {x: -0.00000012100662, y: -0.0000000742596, z: -0.026048638, w: 0.99966073}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000005}
+    - name: Experimental_Player_SKIN:Main_Character_GEO
+      parentName: EXP_Player@idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:Breast_Plate_GEO
+      parentName: Experimental_Player_SKIN:Main_Character_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:Character_GEO
+      parentName: Experimental_Player_SKIN:Main_Character_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:Helmet_GEO
+      parentName: Experimental_Player_SKIN:Main_Character_GEO
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_Knee_Cap_GEO
+      parentName: Experimental_Player_SKIN:Main_Character_GEO
+      position: {x: -0.2827272, y: 0.45375368, z: 0.016655637}
+      rotation: {x: 0.2428835, y: -0.16164733, z: -0.070855916, w: 0.9538644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:L_Shoulder_Pad_GEO
+      parentName: Experimental_Player_SKIN:Main_Character_GEO
+      position: {x: -0.2909949, y: 1.8986317, z: -0.11555159}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:R_Knee_Cap_GEO
+      parentName: Experimental_Player_SKIN:Main_Character_GEO
+      position: {x: 0.2363132, y: 0.5344454, z: 0.38624302}
+      rotation: {x: 0.0956269, y: 0.093563564, z: 0.02602598, w: 0.9906685}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Experimental_Player_SKIN:R_Shoulder_Pad_GEO
+      parentName: Experimental_Player_SKIN:Main_Character_GEO
+      position: {x: 0.2674407, y: 1.8986317, z: 0.14505418}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
