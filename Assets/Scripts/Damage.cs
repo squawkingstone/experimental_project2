@@ -22,7 +22,6 @@ public class Damage : MonoBehaviour
         isAlive = true;
     }
 
-
     void Start()
     {
         health = (int)maxHealth;
