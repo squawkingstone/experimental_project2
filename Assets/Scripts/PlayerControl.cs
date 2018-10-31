@@ -191,7 +191,7 @@ public class PlayerControl : MonoBehaviour
     {
         canMove = value;
         rb.useGravity = value;
-        playerAnim.SetGrabbed(value);
+        playerAnim.SetGrabbed(!value);
         if(!value)
         {
             
