@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 1c1cdc014bc35dc4d805fb1d0cf1f4e7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Experimental_RIG:Clavicle_JNT
+    100002: Experimental_RIG:Head_Tip_JNT
+    100004: Experimental_RIG:JNTS_DONOTTOUCH
+    100006: Experimental_RIG:L_Ankle_IK
+    100008: Experimental_RIG:L_Ankle_JNT
+    100010: Experimental_RIG:L_Elbow_JNT
+    100012: Experimental_RIG:L_Fingers_JNT
+    100014: Experimental_RIG:L_Foot_IK
+    100016: Experimental_RIG:L_Knee_JNT
+    100018: Experimental_RIG:L_Reverse_Foot_JNT
+    100020: Experimental_RIG:L_RV_Ankle_JNT
+    100022: Experimental_RIG:L_RV_Tip_JNT
+    100024: Experimental_RIG:L_Shoulder_JNT
+    100026: Experimental_RIG:L_Shoulder_Shrug_JNT
+    100028: Experimental_RIG:L_Thigh_JNT
+    100030: Experimental_RIG:L_Toes_JNT
+    100032: Experimental_RIG:L_Wrist_JNT
+    100034: Experimental_RIG:Lower_Body_JNT
+    100036: Experimental_RIG:Neck_JNT
+    100038: Experimental_RIG:R_Ankle_IK
+    100040: Experimental_RIG:R_Ankle_JNT
+    100042: Experimental_RIG:R_Elbow_JNT
+    100044: Experimental_RIG:R_Fingers_JNT
+    100046: Experimental_RIG:R_Foot_IK
+    100048: Experimental_RIG:R_Knee_JNT
+    100050: Experimental_RIG:R_Reverse_Foot_JNT
+    100052: Experimental_RIG:R_RV_Ankle_JNT
+    100054: Experimental_RIG:R_RV_Tip_JNT
+    100056: Experimental_RIG:R_Shoulder_JNT
+    100058: Experimental_RIG:R_Shoulder_Shrug_JNT
+    100060: Experimental_RIG:R_Thigh_JNT
+    100062: Experimental_RIG:R_Toes_JNT
+    100064: Experimental_RIG:R_Wrist_JNT
+    100066: Experimental_RIG:root_JNT
+    100068: Experimental_RIG:Upper_Body_JNT
+    100070: L_Arm_IK
+    100072: L_Hand_GEO
+    100074: R_Hand_GEO
+    100076: Skele_Head
+    100078: Skele_L_Arm
+    100080: Skele_L_Forearm
+    100082: Skele_R_Arm
+    100084: Skele_R_Forearm
+    100086: Skele_Ribs
+    100088: //RootNode
+    100090: Skeleton
+    400000: Experimental_RIG:Clavicle_JNT
+    400002: Experimental_RIG:Head_Tip_JNT
+    400004: Experimental_RIG:JNTS_DONOTTOUCH
+    400006: Experimental_RIG:L_Ankle_IK
+    400008: Experimental_RIG:L_Ankle_JNT
+    400010: Experimental_RIG:L_Elbow_JNT
+    400012: Experimental_RIG:L_Fingers_JNT
+    400014: Experimental_RIG:L_Foot_IK
+    400016: Experimental_RIG:L_Knee_JNT
+    400018: Experimental_RIG:L_Reverse_Foot_JNT
+    400020: Experimental_RIG:L_RV_Ankle_JNT
+    400022: Experimental_RIG:L_RV_Tip_JNT
+    400024: Experimental_RIG:L_Shoulder_JNT
+    400026: Experimental_RIG:L_Shoulder_Shrug_JNT
+    400028: Experimental_RIG:L_Thigh_JNT
+    400030: Experimental_RIG:L_Toes_JNT
+    400032: Experimental_RIG:L_Wrist_JNT
+    400034: Experimental_RIG:Lower_Body_JNT
+    400036: Experimental_RIG:Neck_JNT
+    400038: Experimental_RIG:R_Ankle_IK
+    400040: Experimental_RIG:R_Ankle_JNT
+    400042: Experimental_RIG:R_Elbow_JNT
+    400044: Experimental_RIG:R_Fingers_JNT
+    400046: Experimental_RIG:R_Foot_IK
+    400048: Experimental_RIG:R_Knee_JNT
+    400050: Experimental_RIG:R_Reverse_Foot_JNT
+    400052: Experimental_RIG:R_RV_Ankle_JNT
+    400054: Experimental_RIG:R_RV_Tip_JNT
+    400056: Experimental_RIG:R_Shoulder_JNT
+    400058: Experimental_RIG:R_Shoulder_Shrug_JNT
+    400060: Experimental_RIG:R_Thigh_JNT
+    400062: Experimental_RIG:R_Toes_JNT
+    400064: Experimental_RIG:R_Wrist_JNT
+    400066: Experimental_RIG:root_JNT
+    400068: Experimental_RIG:Upper_Body_JNT
+    400070: L_Arm_IK
+    400072: L_Hand_GEO
+    400074: R_Hand_GEO
+    400076: Skele_Head
+    400078: Skele_L_Arm
+    400080: Skele_L_Forearm
+    400082: Skele_R_Arm
+    400084: Skele_R_Forearm
+    400086: Skele_Ribs
+    400088: //RootNode
+    400090: Skeleton
+    2100000: lambert1
+    4300000: Skele_Head
+    4300002: Skele_Ribs
+    4300004: Skele_R_Arm
+    4300006: Skele_R_Forearm
+    4300008: Skele_L_Forearm
+    4300010: Skele_L_Arm
+    4300012: L_Hand_GEO
+    4300014: R_Hand_GEO
+    7400000: '@nothing'
+    9500000: //RootNode
+    13700000: L_Hand_GEO
+    13700002: R_Hand_GEO
+    13700004: Skele_Head
+    13700006: Skele_L_Arm
+    13700008: Skele_L_Forearm
+    13700010: Skele_R_Arm
+    13700012: Skele_R_Forearm
+    13700014: Skele_Ribs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,14 +11,17 @@ public class Damage : MonoBehaviour
     
     private int health;
     private new AudioSource audio;
+    private DungeonNarration narration;
 
     public bool isAlive{get; private set;}
 
     void Awake()
     {
         audio = GetComponent<AudioSource>();
+        
         isAlive = true;
     }
+
 
     void Start()
     {
@@ -27,11 +30,13 @@ public class Damage : MonoBehaviour
         {
             text.text = health.ToString();
         }
+        narration = GameObject.Find("DungeonManager").GetComponent<DungeonNarration>();
     }
 
     public bool TakeDamage(int amount)
     {
         health -= amount;
+        narration.PlayFightClip();
         if(text != null)
         {
             text.text = health.ToString();
