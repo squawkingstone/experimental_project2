@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Damage : MonoBehaviour
 {
@@ -50,6 +51,10 @@ public class Damage : MonoBehaviour
         }
         if(health <= 0)
         {
+            if(GetComponent<PlayerControl>() != null)
+            {
+                SceneManager.LoadScene("Town");
+            }
             DieAndFallover daf = GetComponent<DieAndFallover>();
             if(daf != null)
             {
