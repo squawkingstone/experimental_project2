@@ -11,6 +11,7 @@ public class TextScroll : MonoBehaviour
     #region Debug
     [SerializeField] private string[] testStrings;
     [SerializeField] private bool sendStrings;
+    [SerializeField] private GameObject panel;
     #endregion
     
 
@@ -30,6 +31,7 @@ public class TextScroll : MonoBehaviour
     void Start()
     {
         text.enabled = false;
+        panel.SetActive(false);
     }
 
     void Update()
@@ -48,6 +50,7 @@ public class TextScroll : MonoBehaviour
             if(!text.enabled)
             {
                 text.enabled = true;
+                panel.SetActive(true);
             }
             int maxLength = textStrings[textStrings.Length - textboxes].Length;
 
@@ -61,6 +64,7 @@ public class TextScroll : MonoBehaviour
                     {
                         isActive = false;
                         text.enabled = false;
+                        panel.SetActive(false);
                         if(completeAction != null)
                         {
                             completeAction();

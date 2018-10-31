@@ -58,6 +58,7 @@ public class PlayerControl : MonoBehaviour
         canMove = true;
         source = GetComponent<AudioSource>();
         lastClink = Time.time;
+        playerAnim = GetComponent<PlayerAnim>();
     }
 
     void Update()
