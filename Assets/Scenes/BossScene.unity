@@ -310,6 +310,106 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224535353039111900, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224782279210896698, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224782279210896698, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224782279210896698, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224782279210896698, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224782279210896698, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 224782279210896698, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224526489092448308, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224526489092448308, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224526489092448308, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224526489092448308, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224526489092448308, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 224526489092448308, guid: 939476d4722dc434695647076f2498f6,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 939476d4722dc434695647076f2498f6, type: 2}
   m_IsPrefabAsset: 0
@@ -560,7 +660,7 @@ MonoBehaviour:
   activeColor: {r: 1, g: 1, b: 0, a: 0}
   rewardText:
   - You found a sword!
-  - It is the same as the one you laready have.
+  - It is the same as the one you already have.
   instantiate: {fileID: 1645136270267612, guid: 97b1c9b51f4f30f488ccfad5fc80539a,
     type: 2}
 --- !u!65 &417211188
